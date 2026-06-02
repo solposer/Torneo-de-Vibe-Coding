@@ -1,0 +1,22 @@
+.card-beneficios{
+    width: 308px;
+    height:342px;
+    background:var(--color-negro-claro);
+    border-width: 0.8; 
+    border-color: var(--color-plomo);
+    border-radius: 18px;
+    padding: 40px;
+}
+
+.subtitulo-beneficios{
+    color: var(--color-blanco);
+    font-size: 24px;
+    font-family: var(--fuente-subtitulos);
+    margin-bottom: 48px;
+}
+
+.descripcion-beneficios{
+    color:var(--color-plomo);
+    font-size:28px;
+    font-family: var(--fuente-parrafos);
+}

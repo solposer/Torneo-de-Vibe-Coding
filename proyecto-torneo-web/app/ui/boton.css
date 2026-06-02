@@ -1,0 +1,11 @@
+.boton-postular{
+    color:var(--color-blanco);
+    background:var(--gradiente-principal);
+    width: 402px; 
+    height: 88px;
+    border:none;
+    border-radius:50px;
+    font-size: 32px;
+}
+
+

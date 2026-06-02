@@ -1,8 +1,9 @@
+import "./cards-beneficios.css";
 export default function CardsBeneficios() {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h3 className="text-xl font-bold mb-2">Beneficio 1</h3>
-      <p className="text-gray-600">Descripción del beneficio 1.</p>
+    <div className="card-beneficios">
+      <h3 className="subtitulo-beneficios">Beneficio 1</h3>
+      <p className="descripcion-beneficios ">Descripción del beneficio 1.</p>
     </div>
   );
 }

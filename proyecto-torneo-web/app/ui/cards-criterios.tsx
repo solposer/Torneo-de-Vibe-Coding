@@ -1,8 +1,9 @@
+import "./cards-criterios.css" 
 export default function CardsCriterios() {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h3 className="text-xl font-bold mb-2">Criterio 1</h3>
-      <p className="text-gray-600">Descripción del criterio 1.</p>
+    <div className="card-criterios">
+      <h3 className="fuente-suntitulos">Criterio 1</h3>
+      <p className="">Descripción del criterio 1.</p>
     </div>
   );
 }

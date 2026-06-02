@@ -1,0 +1,9 @@
+.card-criterios{
+    width: 261px;
+    height:258px;
+    background:var(--color-negro-claro);
+    border-width: 1; 
+    border-color: var(--color-plomo);
+    border-radius: 18px;
+    padding: 40px;
+}
