@@ -43,6 +43,17 @@
 
 }
 
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
 .fuente-parrafos {
   font-family: var(--fuente-parrafos);
 }
