@@ -1,0 +1,245 @@
+{
+    "title": "Torneo de Vibe Coding",
+    "date": {
+        "title":"27 JUN 2026",
+        "description":"sabado"
+    },
+    "place": {
+        "title":"Pabellon V",
+        "description":" av. lolol 673240 lololol"
+    },
+    "hour": {
+        "title":"9:00 - 20 h"
+    },
+    "registrationEndDate": "15 de Junio",
+    "description": "Unete a este concurso lleno de developers innovadores y con mucho vibe. Listo para ganar grandes premios, construir proyectos con IA y hacer networking con personas de la indsutria?",
+    "mision": "Realizar soluciones técnicamente complejas a problemas  utilizando tecnologías de alta complejidad como agentes de IA, Blockchain, arquitectura compleja, IoT, lenguajes de bajísimo nivel, etc. Con ayuda de la IA generarativa.",
+    "topic": "Se dirá el mismo día",
+    "toApply": [
+        "Equipo de 3 personas con distintos roles",
+        "CV, LinkedIn, GitHub y carta de motivación grupal",
+        "Disponibilidad presencial las 11 horas del evento"
+    ],
+    "access":[
+        "Entrada gratuita",
+        "Abierto al publico general",
+        "+11 vibeCoding responsable"
+    ],
+    "benefits": [
+        {
+            "title":"Talleres y asesorias" ,
+            "description":"ingenieros experimentados"
+        },
+        {
+            "title":"Networking real",
+            "description":"Coneccion con devs de la industria"
+        },
+        {
+            "title":"Dev starter pack",
+            "description":"GitHub Student Pack + Cursor IDE"
+        },
+        {
+            "title":"Ingenieria real",
+            "description":"Prácticas + uso estratégico de IA"
+        }
+    ],
+    "prizes": [
+        {
+            "name": "Cyborgs",
+            "description": "1er puesto",
+            "prize": [
+                {
+                    "physical": "hardware",
+                    "digital": "plan de IA",
+                    "educational": "plan educativo"
+                }
+            ]
+        },
+        {
+            "name": "Hustlers",
+            "description": "2do puesto",
+            "prize": [
+                {
+                    "physical": "DSC PUCP merch",
+                    "digital": "digital",
+                    "educational": ""
+                }
+            ]
+        }
+    ],
+    "schedule": [
+        {
+            "time": "9:00",
+            "title": "",
+            "description": "Cheking",
+            "mood":"important"
+        },
+        {
+            "time": "9:30",
+            "title": "",
+            "description": "Revelación del reto",
+            "mood":"not-important"
+        },
+        {
+            "time": "10:00",
+            "title": "",
+            "description": "Taller: Orquestación con IA",
+            "mood":"not-important"
+        },
+        {
+            "time": "10:45",
+            "title": "Sprint 0",
+            "description": "Arquitectura y Especificación",
+            "mood":"important"
+        },
+        {
+            "time": "11:30",
+            "title": "Sprint 1",
+            "description": "Frontend & Vibes",
+            "mood":"important"
+        },
+        {
+            "time": "13:00",
+            "title": "",
+            "description": "Almuerzo y Tech Hunting de empresas",
+            "mood":"not-important"
+        },
+        {
+            "time": "14:00",
+            "title": "",
+            "description": "Dinámica descongestionante",
+            "mood":"not-important"
+        },
+        {
+            "time": "14:15",
+            "title": "Sprint 2",
+            "description": "Backend, Lógica y CI/CD",
+            "mood":"important"
+        },
+        {
+            "time": "17:30",
+            "title": "",
+            "description": "Tech Talk",
+            "mood":"not-important"
+        },
+        {
+            "time": "18:00",
+            "title": "",
+            "description": "Presentación de pitches y demos",
+            "mood":"important"
+        },
+        {
+            "time": "19:15",
+            "title": "",
+            "description": "Relajo y snacks",
+            "mood":"not-important"
+        },
+        {
+            "time": "19:45",
+            "title": "",
+            "description": "Premiación y cierre",
+            "mood":"important"
+        }
+    ],
+    "criteria": [
+        {
+            "weight": "40%",
+            "title": "Arquitectura e Ingeniería",
+            "description": ""
+        },
+        {
+            "weight": "30%",
+            "title": "Funcionalidad y despliegue",
+            "description": ""
+        },
+        {
+            "weight": "15%",
+            "title": "UX/UI y adaptación creativa",
+            "description": ""
+        },
+        {
+            "weight": "15%",
+            "title": "Pitch y Caso de Negocio",
+            "description": ""
+        }
+    ],
+    "questions": [
+        {
+            "question": "¿Necesitamos llevar laptops?",
+            "answer": "No"
+        },
+        {
+            "question": "¿Puedo ausentarme durante un par de horas?",
+            "answer": "No"
+        },
+        {
+            "question": "¿Qué pasa con la autoria de mi creación?",
+            "answer": "Cada uno permanece con sus derechos de autor"
+        },
+        {
+            "question": "¿El evento pagara por mis herramientas de elección?",
+            "answer": "No"
+        },
+        {
+            "question": "",
+            "answer": ""
+        }
+    ],
+    "importantDates": [
+        {
+            "date": 
+                {
+                    "day": "15",
+                    "month": "JUN"
+                },
+            
+            "title":"Cierre de postulaciones",
+            "description": "Ultimo dia para aplicar"
+        },
+        {
+            "date":
+                {
+                    "day":"20",
+                    "month":"JUN"
+                },
+            "title":"Anuncio de equipos",
+            "description": "seleccionados"
+        },
+        {
+            "date":
+                {
+                    "day":"27",
+                    "month":"JUN"
+                },
+            "title":"Torneo de Vibe Coding",
+            "description": "NTT Data 9am a 8pm"
+        }
+    ],
+    "socials": [
+        {
+            "name": "kick",
+            "userName": "dsc_pucp",
+            "link": "https://kick.com/dsc-pucp"
+        },
+        {
+            "name": "instagram",
+            "userName": "@dsc.pucp",
+            "link": "https://www.instagram.com/dsc.pucp/"
+        },
+        {
+            "name": "linkedin",
+            "userName": "Developer Student Club PUCP",
+            "link": "https://www.linkedin.com/company/developer-student-club-pucp/posts/?feedView=all"
+        },
+        {
+            "name": "DSC PUCP",
+            "userName": "",
+            "link": "https://dsc.inf.pucp.edu.pe/"
+        },
+        {
+            "name": "github",
+            "userName": "",
+            "link": "https://github.com/dsc-pucp"
+        }
+    ]
+}

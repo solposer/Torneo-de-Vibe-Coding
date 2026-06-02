@@ -39,4 +39,13 @@
   /*    F U E N T E S    */
   --fuente-parrafos:'Space Grotesk';
   --fuente-subtitulos:'Sixtyfour Convergence';
+
+}
+
+.fuente-parrafos {
+  font-family: var(--fuente-parrafos);
+}
+
+.fuente-subtitulos {
+  font-family: var(--fuente-subtitulos);
 }
