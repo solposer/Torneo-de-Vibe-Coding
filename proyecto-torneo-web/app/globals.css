@@ -1,26 +1,42 @@
-@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sixtyfour+Convergence&family=Space+Grotesk:wght@300..700&display=swap');
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+:root{
+  /*    C O L O R E S    */
+  
+  /* PRINCIPALES */
+  
+    /* fondos */
+  --color-fucsia:#C2185B;
+  --color-negro:#000000;
+  --color-celeste-oscuro:#1565C0;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    /* gradientes */
+  --gradiente-principal:linear-gradient(90deg,var(--color-fucsia),var(--color-celeste-oscuro));
+    
+    /*textos */
+  --color-celeste-claro:#2979FF;
+  --color-blanco:#FFFFFF;
+  --color-plomo:#AFABAB;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* SECUNDARIOS */
+
+  /* textos */
+  --color-morado:#A154F0;
+  --color-melon:#E64A6A;
+  --color-melon-claro:#F25E7C;
+
+  /* fondos */
+  --color-negro-claro:#0D0D0D;
+  --color-blanco-bordes:#D9D9D9;
+
+  /* tematica y 2do lugar*/
+  --color-azul-oscuro:rgba(25, 35, 46, 0.3);
+
+  /*ubicacion, badges 1er lugar y fechas importantes*/
+  --color-fucsia-oscuro2:rgba(45, 29, 35, 0.5); 
+
+  /*    F U E N T E S    */
+  --fuente-parrafos:'Space Grotesk';
+  --fuente-subtitulos:'Sixtyfour Convergence';
 }
