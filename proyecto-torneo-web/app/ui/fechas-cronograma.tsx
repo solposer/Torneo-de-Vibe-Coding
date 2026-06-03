@@ -1,8 +1,15 @@
+import "./fechas-cronograma.css";
 export default function FechasCronograma() {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h3 className="text-xl font-bold mb-2">Fecha 1</h3>
-      <p className="text-gray-600">Descripción de la fecha 1.</p>
+    <div className="fecha">
+      <div className="fecha-cuadro">
+        <p className="fecha-dia">12</p>
+        <p className="fecha-mes">JUN</p>
+      </div>
+      <div className="fecha-textos">
+        <h3 className="fecha-titulo">Fecha 1</h3>
+        <p className="fecha-descripcion">Descripción de la fecha 1.</p>
+      </div>
     </div>
   );
 }

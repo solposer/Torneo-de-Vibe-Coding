@@ -35,7 +35,7 @@
   --color-azul-oscuro:rgba(25, 35, 46, 0.3);
 
   /*ubicacion, badges 1er lugar y fechas importantes*/
-  --color-fucsia-oscuro2:rgba(45, 29, 35, 0.5); 
+  --color-fucsia-oscuro:rgba(45, 29, 35, 0.5); 
 
   /*    F U E N T E S    */
   --fuente-parrafos:'Space Grotesk';
@@ -49,6 +49,22 @@
 
 .fuente-subtitulos {
   font-family: var(--fuente-subtitulos);
+  font-palette: --paleta-blanca;
+}
+
+@font-palette-values --paleta-blanca {
+  font-family: 'Sixtyfour Convergence';
+  override-colors: 0 #FFFFFF, 1 #FFFFFF, 2 #FFFFFF, 3 #FFFFFF;
+}
+
+.fuente-titulos{
+  font-family:var(--fuente-subtitulos);
+  font-palette:--paleta-celeste;
+}
+
+@font-palette-values --paleta-celeste {
+  font-family: 'Sixtyfour Convergence';
+  override-colors: 0 #2979FF, 1 #2979FF, 2 #2979FF, 3 #2979FF;
 }
 
 *{

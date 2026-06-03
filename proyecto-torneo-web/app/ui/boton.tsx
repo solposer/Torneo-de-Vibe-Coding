@@ -1,8 +1,8 @@
 import "./boton.css";
 export default function Boton() {
   return (
-    <button className="boton-postular subtitulo-beneficios">
-      Botón
+    <button className="boton-postular fuente-subtitulos">
+      Postular
     </button>
   );
 }

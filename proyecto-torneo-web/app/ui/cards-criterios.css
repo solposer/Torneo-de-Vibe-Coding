@@ -5,5 +5,18 @@
     border-width: 1; 
     border-color: var(--color-plomo);
     border-radius: 18px;
-    padding: 40px;
+     border: 1px solid var(--color-plomo);
+     padding: 5px;
+}
+.criterio-subtitulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+.criterio-descripcion{
+font-size:30px ;
+color:var(--color-plomo);
+font-weight:lighter;
+text-align: center;
+
 }

@@ -1,0 +1,35 @@
+.fecha{
+font-family: var(--fuente-parrafos);
+display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.fecha-cuadro{
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:16px ;
+}
+.fecha-dia{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+.fecha-mes{
+    font-size:24px;
+    margin: 0;
+}
+.fecha-textos{
+    border-width: 1px;
+}
+.fecha-titulo{
+    font-weight: bold;
+    font-size: 32px;
+}
+.fecha-descripcion{
+    color:var(--color-plomo);
+    font-size: 24px;
+}
