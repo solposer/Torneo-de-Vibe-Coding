@@ -1,0 +1,15 @@
+{    
+    "linkPostulacio": "#",
+    "linkBasesOficiales": "#",
+    "fechaEvento":{
+        "fecha": "27 JUN 2026",
+        "dia": "sábado"
+    },
+    "horaInicio": "9:00",
+    "horafin": "20:00",
+    "lugar": {
+        "nombre": "NTT DATA BLOOM",
+        "avenida": "Av. FALTA BUSCAR LA AVENIDA 184 ",
+        "link-ubicacion": "#"
+    }
+}

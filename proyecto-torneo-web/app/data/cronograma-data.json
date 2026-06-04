@@ -1,0 +1,54 @@
+{
+    "cronograma": [
+        {
+            "hora": "9:00",
+            "descripcion": "Checking"
+        },
+        {
+            "hora": "9:30",
+            "descripcion": "Presentación del reto"
+        },
+        {
+            "hora": "9:30",
+            "subtitulo": "Taller relámpago",
+            "descripcion": "Checking"
+        },
+        {
+            "hora": "9:30",
+            "subtitulo": "Sprint 0",
+            "descripcion": "Arquitectura y especificación"
+        },
+        {
+            "hora": "13:00",
+            "descripcion": "Almuerzo y Tech Hunting"
+        },
+        {
+            "hora": "14:00",
+            "descripcion": "Dinámica descongelante  "
+        },
+        {
+            "hora": "14:30",
+            "subtitulo": "Sprint 2:",
+            "descripcion": "Arquitectura y especificación"
+        }
+    ],
+
+    "criterios":[
+        {
+            "porcentaje": "40",
+            "descripcion": "Arquitectura e Ingeniería"
+        },
+        {
+            "porcentaje": "30",
+            "descripcion": "Funcionalidad y despliegue"
+        },
+        {
+            "porcentaje": "15",
+            "descripcion": "UX/UI y adaptación creativa"
+        },
+        {
+            "porcentaje": "15",
+            "descripcion": "Pitch y Caso de Negocio"
+        } 
+    ]
+}

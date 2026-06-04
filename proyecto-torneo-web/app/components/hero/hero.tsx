@@ -1,9 +1,5 @@
 import Boton from '@/app/ui/boton';
-import CardsBeneficios from '@/app/ui/cards-beneficios';
-import CardsCriterios from '@/app/ui/cards-criterios';
-import CardsPremios from '@/app/ui/cards-premios';
-import FechasCronograma from '@/app/ui/fechas-cronograma';
-import data from "@/app/data/data.json";
+
 
 import "./hero.css";
 import { Calendar, Clock, ExternalLink, MapPin } from 'lucide-react';
@@ -60,11 +56,7 @@ export default function Hero() {
                 </a>
             </article>
             </section>
-            <Boton />
-            <CardsBeneficios />
-            <CardsPremios />
-            <CardsCriterios />
-            <FechasCronograma />
+            <Boton />            
         </>
     )
 }

@@ -1,0 +1,22 @@
+{
+    "fechasImportante": [
+        {
+            "fecha": "15 JUN",
+            "titulo": "Cierre de postulaciones",
+            "descripcion": "Último día para aplicar"
+        },
+        {
+            "fecha": "20 JUN",
+            "titulo": "Anuncio de equipos",
+            "descripcion": "Seleccionados"
+        },
+        {
+            "fecha": "15 JUN",
+            "titulo": "Torneo de Vibecoding",
+            "descripcion": "PUCP- 9am a 8pm"
+        }
+    ],
+    "preguntasFrecuentes": [
+        
+    ]
+}

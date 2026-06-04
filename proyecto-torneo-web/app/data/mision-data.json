@@ -1,0 +1,25 @@
+{
+    "mision": "Construir un producto de software funcional y desplegado en producción en menos de 11 horas, usando IA como copiloto del desarrollo",
+    "beneficios": [
+        {
+            "icono": "⚡",
+            "titulo": "Talleres y asesoría",
+            "descripcion": "Ingenieros experimentados"
+        },
+        {
+            "icono": "🤝",
+            "titulo": "Networking",
+            "descripcion": "Conección de los devs de la industria"
+        },
+        {        
+            "icono": "🎒",
+            "titulo": "Ventaja oculta",
+            "descripcion": "Herramientas que aún no podemos revelar"
+        },
+        {
+            "icono": "🛠️",
+            "titulo": "Ingeniería real",
+            "descripcion": "Prácticas + uso estratégico de IA"
+        }
+    ]
+}
