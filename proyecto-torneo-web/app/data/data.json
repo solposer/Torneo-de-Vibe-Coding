@@ -28,19 +28,24 @@
     "benefits": [
         {
             "title":"Talleres y asesorias" ,
-            "description":"ingenieros experimentados"
+            "description":"ingenieros experimentados",
+            "icon":"/icons/rayo.png"
+
         },
         {
             "title":"Networking real",
-            "description":"Coneccion con devs de la industria"
+            "description":"Coneccion con devs de la industria",
+            "icon":"/icons/manos.png"
         },
         {
             "title":"Dev starter pack",
-            "description":"GitHub Student Pack + Cursor IDE"
+            "description":"GitHub Student Pack + Cursor IDE",
+            "icon": "/icons/mochila.png"
         },
         {
             "title":"Ingenieria real",
-            "description":"Prácticas + uso estratégico de IA"
+            "description":"Prácticas + uso estratégico de IA",
+            "icon":"/icons/herramientas.png"
         }
     ],
     "prizes": [
@@ -53,7 +58,8 @@
                     "digital": "plan de IA",
                     "educational": "plan educativo"
                 }
-            ]
+            ],
+            "icon":"/icons/medalla1"
         },
         {
             "name": "Hustlers",
@@ -64,7 +70,8 @@
                     "digital": "digital",
                     "educational": ""
                 }
-            ]
+            ],
+            "icon":"/icons/medalla2"
         }
     ],
     "schedule": [
