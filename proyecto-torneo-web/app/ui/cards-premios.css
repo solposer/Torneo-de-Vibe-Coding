@@ -1,4 +1,71 @@
 .card-premios{
     width: 615px;
     height: 254px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius:18px ;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.premio-titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.premio-puesto{
+    font-size: 30px;
+    margin: 0;
+}
+
+.premio-descripcion{
+    font-size: 30px;
+     margin: 0;
+}
+
+.premio-badges{
+    display: flex;
+    gap: 10px;
+}
+
+.premio-badge{
+    font-size:24px;
+    border-radius: 29px;
+    border-style: solid;
+    border-width: 0.3px;
+    padding: 6px 16px;
+}
+
+.card-premios--primero{
+    background:var(--color-fucsia-oscuro);
+    border-color: var(--color-fucsia);
+}
+
+.card-premios--segundo{
+    background:var(--color-azul-oscuro);
+    border-color:var(--color-celeste-oscuro);
+
+}
+
+.premio-badge--primero{
+    color:#70A3F8;
+    border-color:rgba(25, 35, 46, 0.5)
+}
+
+.premio-badge--segundo{
+    color:var(--color-melon-claro);
+    border-color:rgb(45, 29, 35,0.5)
+}
+
+.premio-descripcion--primero{
+    color:var(--color-fucsia)
+}
+
+.premio-descripcion--segundo{
+    color:var(--color-celeste-claro)
 }

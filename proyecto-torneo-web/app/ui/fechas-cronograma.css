@@ -1,6 +1,6 @@
 .fecha{
-font-family: var(--fuente-parrafos);
-display: flex;
+    font-family: var(--fuente-parrafos);
+    display: flex;
     align-items: center;
     gap: 20px;
 }
@@ -32,4 +32,22 @@ display: flex;
 .fecha-descripcion{
     color:var(--color-plomo);
     font-size: 24px;
+}
+.fecha-titulo-melon{
+    color:var(--color-melon-claro)
+}
+.fecha-titulo-blanco{
+    color:var(--color-blanco);
+}
+.fecha-dia-melon{
+    color:var(--color-melon-claro)
+}
+.fecha-dia-blanco{
+    color:var(--color-blanco);
+}
+.fecha-cuadro-melon{
+    border-color: var(--color-melon-claro);
+}
+.fecha-cuadro-blanco{
+    border-color: var(--color-blanco);
 }

@@ -20,3 +20,27 @@ font-weight:lighter;
 text-align: center;
 
 }
+@font-palette-values --paleta-morada1 {
+  font-family:'Sixtyfour Convergence';
+  override-colors: 0 #9B5489, 1 #9B5489, 2 #9B5489, 3 #9B5489;
+}
+@font-palette-values --paleta-morada2 {
+  font-family:'Sixtyfour Convergence';
+  override-colors: 0 #635A9F, 1 #635A9F, 2 #635A9F, 3 #635A9F;
+}
+@font-palette-values --paleta-melon {
+  font-family:'Sixtyfour Convergence';
+  override-colors: 0 #F25E7C, 1 #F25E7C, 2 #F25E7C, 3 #F25E7C;
+}
+.fuente-color-1{
+  font-palette:--paleta-celeste;
+}
+.fuente-color-2{
+    font-palette: --paleta-morada1
+}
+.fuente-color-3{
+    font-palette: --paleta-morada2
+}
+.fuente-color-4{
+    font-palette: --paleta-melon
+}

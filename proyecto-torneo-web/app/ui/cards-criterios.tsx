@@ -1,9 +1,14 @@
 import "./cards-criterios.css" 
-export default function CardsCriterios() {
+interface CriteriosProps{
+  peso:string,
+  descripcion:string,
+  numero:number
+}
+export default function CardsCriterios({peso, descripcion, numero}:CriteriosProps) {
   return (
     <div className="card-criterios">
-      <h3 className="criterio-subtitulo fuente-subtitulos">10%</h3>
-      <p className="criterio-descripcion fuente-parrafos">UX/UI y adaptacion creativa</p>
+      <h3 className={`criterio-subtitulo fuente-subtitulos fuente-color-${numero}`}>{peso}</h3>
+      <p className="criterio-descripcion fuente-parrafos">{descripcion}</p>
     </div>
   );
 }
