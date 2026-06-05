@@ -6,28 +6,23 @@
     padding: 4px 0px
 }
 
-.logo {
-    width: 20px;
-    height: 20px;
-    background-color: white;  
-}
-
 .hero-main{
-    padding-top: 5px;
+    padding-top: 30px;
 }
 
 .hero-content {
     flex: 1;
     display: flex;
     gap: 1rem;
-    margin-top: 10px;
+    margin-top: 100px;
+    padding: 20px 25px;;   
 }
 
 .hero-image {
-    width: 80px;
-    height: 80px;
-    background-color: gray;
-    margin: auto;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(60%);
 }
 
 .hero-left, 
@@ -57,9 +52,13 @@
 }
 
 .fechas-section {
+    font-size: large;
+    padding-top: 20px;
     display: flex;
-    gap: 1rem; /* Espacio entre las cajas de fecha */
-    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    margin: 50px 0px;
 }
 
 .caja-fecha {
@@ -83,7 +82,7 @@
 }
 
 .card-lugar {
-    flex: 1;
+    width: 560px;    
     border: 1px solid var(--color-fucsia);
     background-color: rgba(45, 29, 35, 0.5);
     color: white; /* Para que el texto resalte sobre el fondo oscuro */
@@ -105,8 +104,15 @@
 }
 
 .fechas-grupo {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  gap: 8rem
+  display: flex;  
+  gap: 10rem;
+}
+
+.text-torneo{
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
+.text-vibecoding{
+    font-size: 82px;
 }

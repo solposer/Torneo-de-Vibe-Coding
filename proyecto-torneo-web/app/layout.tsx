@@ -15,7 +15,7 @@ export default function RootLayout({
     <html
       lang="es"
     >
-      <body>{children}</body>
+      <body className='fuente-parrafos'>{children}</body>
     </html>
   );
 }
