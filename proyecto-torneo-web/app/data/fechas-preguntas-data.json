@@ -20,6 +20,38 @@
         }
     ],
     "preguntasFrecuentes": [
-        
+        {
+            "question":"¿Necesito experiencia previa en hackathons?",
+            "answer":"No. Se evalúa la calidad técnica del proyecto, no la experiencia en competencias previas."
+        },
+        {
+            "question":"¿Puedo cambiar de equipo después de inscribirme?",
+            "answer":"No. Los equipos son fijos desde la postulación."
+        },
+        {
+            "question":"¿Puedo usar una cuenta de pago en las herramientas de IA?",
+            "answer":"Sí, cada participante usa sus propias herramientas y cuentas."
+        },
+        {
+            "question":"¿Qué pasa si Vercel falla al momento del deploy?",
+            "answer":" El equipo debe gestionar el deploy con tiempo suficiente antes del cierre. No se aceptan extensiones por problemas técnicos de plataformas externas."
+        },
+        {
+            "question":"¿Puedo participar si no soy de la PUCP?",
+            "answer":"Sí, el evento está abierto a todo el público."
+        },
+        {
+            "question":"¿Necesito llevar laptop?" ,
+            "answer":"Sí, cada integrante debe traer su propia laptop con su entorno de desarrollo configurado. El evento no provee equipos. Se recomienda llegar con las herramientas instaladas y listas para no perder tiempo del Sprint 0."
+        },
+        {
+            "question": "¿El evento cubre el costo de mis herramientas?",
+            "answer":"No. Cada participante utiliza sus propias cuentas y herramientas. Todas las herramientas permitidas cuentan con un plan gratuito disponible, por lo que no es requisito tener una cuenta de pago para competir"
+        },
+        {
+            "question":"¿Puedo ausentarme durante el evento?",
+            "answer":"La asistencia presencial es obligatoria durante todo el evento. Ausencias prolongadas pueden ser motivo de descalificación a criterio de los organizadores."
+        }
+
     ]
 }
