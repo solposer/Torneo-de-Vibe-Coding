@@ -9,7 +9,6 @@ export default function CardsBeneficios({titulo, descripcion, icono,}:Beneficios
   return (
     <div className="card-beneficios">
       
-      
       <Image src={icono}
         alt={titulo}
         height={40}

@@ -1,6 +1,40 @@
 {
-    "instagram": "#",
-    "linkedIn": "#",
-    "kick": "#",
-    "dsc-pagina": "#"
+    "socialLinks":[
+    {
+        "name":"instagram",
+        "url":"https://www.instagram.com/dsc.pucp/",
+        "icon":"/logo-instagram.png"
+    },
+    {
+        "name":"kick",
+        "url":"https://kick.com/dsc-pucp",
+        "icon":"/logo-kick.png"
+    },
+    {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/company/developer-student-club-pucp/posts/?feedView=all",
+        "icon":"/logo-linkedin.png"
+    },
+    {
+        "name":"dsc",
+        "url":"https://dsc.inf.pucp.edu.pe/",
+        "icon":"/logo-dsc.png"
+    },
+    {
+        "name":"github",
+        "url":"https://github.com/dsc-pucp",
+        "icon":"/logo-github.png"
+    },
+    {
+        "name":"tiktok",
+        "url":"https://www.tiktok.com/@dsc.pucp",
+        "icon":"/logo-tiktok.png"
+    },{
+        "name":"youtube",
+        "url":"https://www.youtube.com/@dsc_pucp",
+        "icon":"/logo-youtube.png"
+    }
+      
+    ]
+
 }
