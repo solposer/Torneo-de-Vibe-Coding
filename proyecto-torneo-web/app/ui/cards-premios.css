@@ -41,31 +41,31 @@
     padding: 6px 16px;
 }
 
-.card-premios--primero{
+.card-premios--1{
     background:var(--color-fucsia-oscuro);
     border-color: var(--color-fucsia);
 }
 
-.card-premios--segundo{
+.card-premios--2{
     background:var(--color-azul-oscuro);
     border-color:var(--color-celeste-oscuro);
 
 }
 
-.premio-badge--primero{
+.premio-badge--2{
     color:#70A3F8;
     border-color:rgba(25, 35, 46, 0.5)
 }
 
-.premio-badge--segundo{
+.premio-badge--1{
     color:var(--color-melon-claro);
     border-color:rgb(45, 29, 35,0.5)
 }
 
-.premio-descripcion--primero{
+.premio-descripcion--1{
     color:var(--color-fucsia)
 }
 
-.premio-descripcion--segundo{
+.premio-descripcion--2{
     color:var(--color-celeste-claro)
 }

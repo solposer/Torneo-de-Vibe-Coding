@@ -1,0 +1,26 @@
+[
+    {
+            "name": "Cyborgs",
+            "description": "1er puesto",
+            "prize": [
+                {
+                    "physical": "hardware",
+                    "digital": "plan de IA",
+                    "educational": "plan educativo"
+                }
+            ],
+            "icon":"/medalla1.png"
+        },
+        {
+            "name": "Hustlers",
+            "description": "2do puesto",
+            "prize": [
+                {
+                    "physical": "DSC PUCP merch",
+                    "digital": "digital",
+                    "educational": ""
+                }
+            ],
+            "icon":"/medalla2.png"
+        }
+]

@@ -20,6 +20,7 @@ font-weight:lighter;
 text-align: center;
 
 }
+
 @font-palette-values --paleta-morada1 {
   font-family:'Sixtyfour Convergence';
   override-colors: 0 #9B5489, 1 #9B5489, 2 #9B5489, 3 #9B5489;

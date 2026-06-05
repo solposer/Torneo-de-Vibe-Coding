@@ -35,19 +35,19 @@
 
     "criterios":[
         {
-            "porcentaje": "40",
+            "porcentaje": "40%",
             "descripcion": "Arquitectura e Ingeniería"
         },
         {
-            "porcentaje": "30",
+            "porcentaje": "30%",
             "descripcion": "Funcionalidad y despliegue"
         },
         {
-            "porcentaje": "15",
+            "porcentaje": "15%",
             "descripcion": "UX/UI y adaptación creativa"
         },
         {
-            "porcentaje": "15",
+            "porcentaje": "15%",
             "descripcion": "Pitch y Caso de Negocio"
         } 
     ]
