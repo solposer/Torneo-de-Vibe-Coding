@@ -1,0 +1,15 @@
+.fechas-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    gap: 48px;
+    justify-content: center
+}
+
+.fechas-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 80px;
+}

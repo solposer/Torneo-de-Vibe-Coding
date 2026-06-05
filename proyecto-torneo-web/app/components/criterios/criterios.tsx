@@ -5,7 +5,8 @@ import Image from "next/image";
 
 export default function Criterios(){
     return(
-        <>  <div className="criterios-header">
+        <>  
+            <div className="criterios-header">
                 <Image 
                     src={"/critico.png"}
                     alt={"critico"}
