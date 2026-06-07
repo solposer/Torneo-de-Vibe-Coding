@@ -2,34 +2,50 @@
     "cronograma": [
         {
             "hora": "9:00",
-            "descripcion": "Checking"
+            "subtitulo": "Recepción y bienvenida"
         },
         {
             "hora": "9:30",
-            "descripcion": "Presentación del reto"
+            "subtitulo": "Revelación del reto",
+            "descripcion":"Reglas y requerimientos base."
         },
         {
-            "hora": "9:30",
+            "hora": "10:00",
             "subtitulo": "Taller relámpago",
-            "descripcion": "Checking"
+            "descripcion": "Ingeniería de software con IA "
         },
         {
-            "hora": "9:30",
+            "hora": "10:45",
             "subtitulo": "Sprint 0",
             "descripcion": "Arquitectura y especificación"
         },
         {
+            "hora": "11:30",
+            "subtitulo":"Sprint 1",
+            "descripcion": "Frontend & Modularidad"
+        },
+        {
             "hora": "13:00",
-            "descripcion": "Almuerzo y Tech Hunting"
+            "subtitulo":"Almuerzo y networking"
         },
         {
-            "hora": "14:00",
-            "descripcion": "Dinámica descongelante  "
-        },
-        {
-            "hora": "14:30",
+            "hora": "14:15",
             "subtitulo": "Sprint 2:",
-            "descripcion": "Arquitectura y especificación"
+            "descripcion": "Backend, Lógica y Despliegue"
+        },
+        {
+            "hora": "17:30",
+            "subtitulo":"Tech Talk"
+        },
+        {
+            "hora":"18:00",
+            "subtitulo":"Demoday",
+            "descripcion":"5min por equipo + 2min preguntas"
+
+        },
+        {
+            "hora":"19:45",
+            "subtitulo":"Premiacion y cierre"
         }
     ],
 

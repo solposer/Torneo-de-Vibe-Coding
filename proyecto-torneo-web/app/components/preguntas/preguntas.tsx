@@ -1,11 +1,14 @@
+
 "use client";
 
 import React, { useState } from 'react';
-import { MessageCircleQuestion, Plus, X } from 'lucide-react';
+import { Plus, X } from 'lucide-react';
 import { preguntasFrecuentes } from '@/app/data/fechas-preguntas-data.json';
+import Image from 'next/image'
 
 export default function PreguntasFrecuentesSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(3);
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     const toggleFaq = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -17,12 +20,11 @@ export default function PreguntasFrecuentesSection() {
 
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                        <MessageCircleQuestion style={{ color: '#427cf8', width: '2rem', height: '2rem' }} />
-                        <h2 className="font-pixel tracking-widest uppercase" style={{ color: '#427cf8', fontSize: '1.25rem' }}>
+                        <Image src="/duda.png" alt="duda" width={104} height={110} />
+                        <h1 className="fuente-titulos">
                             Preguntas frecuentes
-                        </h2>
+                        </h1>
                     </div>
-                    
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -33,13 +35,16 @@ export default function PreguntasFrecuentesSection() {
                             <div
                                 key={index}
                                 style={{
-                                    borderBottom: index === preguntasFrecuentes.length - 1 ? 'none' : '1px solid #1a1a1a',
                                     paddingTop: '1.5rem',
                                     paddingBottom: '1.5rem',
+                                    paddingLeft: '5rem',
+                                    paddingRight: '6rem',
                                 }}
                             >
                                 <button
                                     onClick={() => toggleFaq(index)}
+                                    onMouseEnter={() => setHoveredIndex(index)}
+                                    onMouseLeave={() => setHoveredIndex(null)}
                                     style={{
                                         width: '100%',
                                         display: 'flex',
@@ -54,15 +59,15 @@ export default function PreguntasFrecuentesSection() {
                                     }}
                                 >
                                     <h3 style={{
-                                        color: isOpen ? '#ffffff' : '#d1d5db',
-                                        fontSize: '1rem',
+                                        color: isOpen ? '#ffffff' : hoveredIndex === index ? '#b91d73' : '#d1d5db',
+                                        fontSize: '24px',
                                         fontWeight: 500,
                                         transition: 'color 0.3s',
                                         margin: 0,
+                                        fontFamily: 'var(--fuente-parrafos)',
                                     }}>
                                         {faq.question}
                                     </h3>
-
                                     <div style={{
                                         marginLeft: '1.5rem',
                                         flexShrink: 0,
@@ -82,14 +87,26 @@ export default function PreguntasFrecuentesSection() {
                                     gridTemplateRows: isOpen ? '1fr' : '0fr',
                                     opacity: isOpen ? 1 : 0,
                                     marginTop: isOpen ? '1rem' : '0',
-                                    transition: 'grid-template-rows 0.3s ease-in-out, opacity 0.3s ease-in-out, margin-top 0.3s ease-in-out'
+                                    transition: 'grid-template-rows 0.3s ease-in-out, opacity 0.3s ease-in-out, margin-top 0.3s ease-in-out',
                                 }}>
                                     <div style={{ overflow: 'hidden' }}>
-                                        <p style={{ color: '#9ca3af', fontSize: '0.875rem', lineHeight: '1.6', paddingRight: '3rem', margin: 0 }}>
+                                        <p style={{
+                                            color: '#9ca3af',
+                                            fontSize: '20px',
+                                            lineHeight: '1.6',
+                                            paddingRight: '3rem',
+                                            margin: 0,
+                                            fontWeight: 'lighter',
+                                            fontFamily: 'var(--fuente-parrafos)',
+                                        }}>
                                             {faq.answer}
                                         </p>
                                     </div>
                                 </div>
+
+                                {index !== preguntasFrecuentes.length - 1 && (
+                                    <div style={{ borderBottom: '1px solid #1a1a1a', marginTop: '1.5rem' }} />
+                                )}
                             </div>
                         );
                     })}
