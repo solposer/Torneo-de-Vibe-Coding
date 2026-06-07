@@ -4,6 +4,7 @@ import Mision from './components/mision/mision';
 import Premios from './components/premios/premios'
 import Fechas from './components/fechas/fechas';
 import Footer from './components/footer/footer'
+import PreguntasFrecuentesSection from './components/preguntas/preguntas';
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
       <Premios />
       <Criterios/>
       <Fechas/>
+      <PreguntasFrecuentesSection/>
       <Footer />
     </>
   );

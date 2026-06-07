@@ -1,6 +1,14 @@
-
+@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sixtyfour+Convergence&family=Space+Grotesk:wght@300..700&display=swap');
 
+@layer base {
+  button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: inherit;
+  }
+}
 :root{
 
   /*    C O L O R E S    */
@@ -75,7 +83,7 @@ body {
 
 @font-palette-values --paleta-celeste {
   font-family: 'Sixtyfour Convergence';
-  override-colors: 0 #2979FF, 1 #2979FF, 2 #2979FF, 3 #2979FF;
+  override-colors: 0 #033A82, 1 #12315C, 2 #0C6EF5, 3 #2979FF
 }
 
 *{

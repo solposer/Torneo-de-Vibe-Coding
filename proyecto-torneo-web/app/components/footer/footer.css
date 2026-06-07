@@ -1,0 +1,75 @@
+.container-colorido {
+  background: linear-gradient(135deg, #C2185B, #1565C0);
+  height: 60vh;
+  display: flex;
+  align-items: flex-end;   /* texto pegado abajo */
+  padding: 2rem;
+}
+
+.footer-pregunta {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.container-redes {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;  /* poco padding, pegado arriba */
+  gap: 1rem;
+  min-height: 40vh;
+  /* quita height: 40vh y justify-content: center */
+}
+
+.redes-iconos {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;  /* ← permite que los íconos bajen a la siguiente línea */
+}
+
+.container-creacion {
+  display: flex;              /* era "flexbox" — inválido */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #000;
+}
+
+.autores {
+  color: var(--color-plomo);
+  font-size: 24px;
+}
+
+.vibear{
+    font-family: var(--fuente-subtitulos);
+    font-palette: --paleta-melon2;
+     color: #E64A6A;
+  -webkit-text-fill-color: #E64A6A;
+}
+
+@font-palette-values --paleta-melon2 {
+  font-family: 'Sixtyfour Convergence';
+  override-colors: 0 #D10202, 
+    1 #D10202, 
+    2 #C24A4A, 
+    3 #C24A4A
+    }
+.container-redes p{
+  color:var(--color-plomo);
+  font-size: 24px;
+}
+.textos-creacion {
+  text-align: right;
+  align-items: center;
+}
+
+.textos-creacion p {
+  margin: 10px;
+}
+
+.texto-club{
+  color: #E64A6A;
+  font-size:24px
+}
