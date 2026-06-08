@@ -1,9 +1,21 @@
-.beneficios-container {
+.mision-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items:end;
+}
+
+.mision-izquierda {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mision-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .mision-header {
@@ -11,5 +23,93 @@
     flex-direction: row;
     align-items: center;
     gap: 16px;
-    margin-bottom: 80px;
+}
+
+.tematica {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-color: var(--color-celeste-claro);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 18px;
+    color: var(--color-celeste-claro);
+    padding: 16px 20px;
+    font-size: 24px;
+    background-color: rgba(25, 35, 46, 0.3);
+}
+
+.accesos {
+    color: #A154F0;
+    font-size: 30px;
+    border-radius: 18px;
+    border-style: solid;
+    border-color: #A154F0;
+    background-color: rgba(161, 84, 240, 0.06);
+    padding: 28px 32px; 
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: fit-content;
+    min-width: 600px;
+}
+
+.acceso-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.acceso-item span {
+    color: #A154F0;;
+}
+
+
+.texto-principal {
+    font-size: 24px;
+    color: #fff;
+}
+
+.subtitulo-llevas {
+    font-family: var(--fuente-subtitulos);
+    margin-bottom: 24px;
+}
+
+.beneficios-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.subtitulos-plomos{
+    font-family: var(--fuente-subtitulos);
+    font-palette:--paleta-ploma;
+    font-size:24px
+}
+
+@font-palette-values --paleta-ploma {   /* ← intacto */
+  font-family: 'Sixtyfour Convergence';
+  override-colors: 0 #695E5E, 1 #AFABAB, 2 #786B6B, 3 #695E5E
+}
+
+@media (max-width: 768px) {
+    .mision-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .accesos {
+        width: 100%;
+        min-width: unset;
+        box-sizing: border-box;
+    }
+
+    .mision-derecha {
+        width: 100%;
+    }
+}
+
+.llevas{
+    margin-bottom: 40px;
 }

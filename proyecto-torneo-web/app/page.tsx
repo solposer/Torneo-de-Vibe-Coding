@@ -5,6 +5,7 @@ import Premios from './components/premios/premios'
 import Fechas from './components/fechas/fechas';
 import Footer from './components/footer/footer'
 import PreguntasFrecuentesSection from './components/preguntas/preguntas';
+import Requerimientos from './components/postular/postular';
 export default function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home() {
       <CardsCriterios />
       <FechasCronograma />
       */}
+      <Requerimientos/>
       <Premios />
       <Criterios/>
       <Fechas/>
