@@ -19,6 +19,7 @@
   border-radius: 30px;
   border-color: var(--color-fucsia);
   border-style: solid;
+  border-width: 1px;
   width: 57px;
   height: 57px;
   font-family: var(--fuente-subtitulos);

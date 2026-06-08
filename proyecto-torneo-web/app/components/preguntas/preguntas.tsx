@@ -59,7 +59,7 @@ export default function PreguntasFrecuentesSection() {
                                     }}
                                 >
                                     <h3 style={{
-                                        color: isOpen ? '#ffffff' : hoveredIndex === index ? '#b91d73' : '#d1d5db',
+                                        color: isOpen ? '#ffffff' : hoveredIndex === index ? '#F0197D' : '#d1d5db',
                                         fontSize: '24px',
                                         fontWeight: 500,
                                         transition: 'color 0.3s',
@@ -75,9 +75,9 @@ export default function PreguntasFrecuentesSection() {
                                         transition: 'transform 0.3s',
                                     }}>
                                         {isOpen ? (
-                                            <X style={{ color: '#b91d73', width: '1.5rem', height: '1.5rem' }} />
+                                            <X style={{ color: '#F0197D', width: '1.5rem', height: '1.5rem' }} />
                                         ) : (
-                                            <Plus style={{ color: '#b91d73', width: '1.5rem', height: '1.5rem' }} />
+                                            <Plus style={{ color: '#F0197D', width: '1.5rem', height: '1.5rem' }} />
                                         )}
                                     </div>
                                 </button>

@@ -1,41 +1,41 @@
 .card-criterios{
     width: 261px;
-    height:258px;
-    background:var(--color-negro-claro);
-    border-width: 1; 
-    border-color: var(--color-plomo);
+    height: 258px;
+    background: var(--color-negro-claro);
     border-radius: 18px;
-     border: 1px solid var(--color-plomo);
-     padding: 5px;
+    border: 1px solid var(--color-plomo);
+    padding: 12px;
 }
 .criterio-subtitulo{
     font-size: 40px;
     text-align: center;
+    margin: 0;
+    margin-top: 16px; /* mismo para todos */
 }
-
 .criterio-descripcion{
-font-size:30px ;
-color:var(--color-plomo);
-text-align: center;
-
+    font-size: 30px;
+    color: var(--color-plomo);
+    text-align: center;
+    margin: 8px 0 0 0;
+}
+@font-palette-values --paleta-fucsia1 {
+  font-family:'Sixtyfour Convergence';
+  override-colors: 0 #8A012A, 
+    1 #8A012A, 2 #8A012A, 
+    3 #8A012A;
 }
 
 @font-palette-values --paleta-morada1 {
   font-family:'Sixtyfour Convergence';
-  override-colors: 0 #4C2C46, 1 #663F60, 2 #C746AD, 3 #4C2C46
+  override-colors: 0 #631852, 1 #631852, 2 #631852, 3 #631852
 }
 @font-palette-values --paleta-morada2 {
   font-family:'Sixtyfour Convergence';
-  override-colors: 0 #4C345C, 1 #4C345C, 2 #2E2038, 3 #635A9F;
+  override-colors: 0 #56378A, 1 #56378A, 2 #56378A, 3 #56378A;
 }
-@font-palette-values --paleta-melon {
-  font-family:'Sixtyfour Convergence';
-  override-colors: 0 #D10202, 
-    1 #D10202, 2 #C24A4A, 
-    3 #C24A4A;
-}
+
 .fuente-color-1{
-  font-palette:--paleta-melon;
+  font-palette:--paleta-fucsia1;
 }
 .fuente-color-2{
     font-palette: --paleta-morada1

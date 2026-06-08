@@ -24,9 +24,7 @@
     margin: 0;
     color:var(--color-plomo)
 }
-.fecha-textos{
-    border-width: 1px;
-}
+
 .fecha-titulo{
     font-weight: bold;
     font-size: 32px;
@@ -38,20 +36,20 @@
     font-size: 24px;
     margin: 0;
 }
-.fecha-titulo-melon{
-    color:var(--color-melon-claro)
+.fecha-titulo-fucsia{
+    color:var(--color-fucsia)
 }
 .fecha-titulo-blanco{
     color:var(--color-blanco);
 }
-.fecha-dia-melon{
-    color:var(--color-melon-claro)
+.fecha-dia-fucsia{
+    color:var(--color-fucsia)
 }
 .fecha-dia-blanco{
     color:var(--color-blanco);
 }
-.fecha-cuadro-melon{
-    border-color: var(--color-melon-claro);
+.fecha-cuadro-fucsia{
+    border-color: var(--color-fucsia);
     background: var(--color-fucsia-oscuro);
 }
 .fecha-cuadro-blanco{

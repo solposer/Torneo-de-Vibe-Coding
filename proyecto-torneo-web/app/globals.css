@@ -1,6 +1,6 @@
-@import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sixtyfour+Convergence&family=Space+Grotesk:wght@300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sixtyfour+Convergence&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
 @layer base {
   button {
     background: transparent;
@@ -16,7 +16,7 @@
   /* PRINCIPALES */
   
     /* fondos */
-  --color-fucsia:#C2185B;
+  --color-fucsia:#F0197D;
   --color-negro:#000000;
   --color-celeste-oscuro:#1565C0;
 
@@ -32,8 +32,6 @@
 
   /* textos */
   --color-morado:#A154F0;
-  --color-melon:#E64A6A;
-  --color-melon-claro:#F25E7C;
 
   /* fondos */
   --color-negro-claro:#0D0D0D;
@@ -88,4 +86,7 @@ body {
 
 *{
   box-sizing: border-box;
+}
+h1{
+  font-size: 32px;
 }

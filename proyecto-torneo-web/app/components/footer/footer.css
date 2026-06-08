@@ -45,8 +45,8 @@
 .vibear{
     font-family: var(--fuente-subtitulos);
     font-palette: --paleta-melon2;
-     color: #E64A6A;
-  -webkit-text-fill-color: #E64A6A;
+     color: var(--color-fucsia);
+  -webkit-text-fill-color: var(--color-fucsia);
 }
 
 @font-palette-values --paleta-melon2 {
@@ -70,6 +70,6 @@
 }
 
 .texto-club{
-  color: #E64A6A;
+  color: var(--color-fucsia);
   font-size:24px
 }
