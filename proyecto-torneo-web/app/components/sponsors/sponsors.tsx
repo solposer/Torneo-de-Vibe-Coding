@@ -9,14 +9,14 @@ export default function Sponsors() {
       <section className="overflow-hidden">
         <div className="slide-track">
           {[...data.sponsors, ...data.sponsors,...data.sponsors,...data.sponsors].map((sponsor, index) => (
-            <Image
-              key={index}
-              src={sponsor.logo}
-              alt={sponsor.name}
-              width={200}
-              height={111}
-              className="h-16 w-auto"
-            />
+           <Image
+            key={index}
+            src={sponsor.logo}
+            alt={sponsor.name}
+            width={160}
+            height={40}
+            style={{ objectFit: 'contain', width: '90%', height: 'auto' }}
+          />
           ))}
         </div>
       </section>

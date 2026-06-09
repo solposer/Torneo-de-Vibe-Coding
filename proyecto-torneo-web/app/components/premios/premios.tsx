@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Premios(){
     return(
         <>  
-            <div className="premios-header">
+            <div className="premios-header contenedor-estandar">
                 <Image 
                 src="/trofeo.png"
                 alt="trofeo"
@@ -15,7 +15,7 @@ export default function Premios(){
                 <h1 className="fuente-titulos">Premios</h1>
             </div>
             {/*TODO: poner las mision y el acceso */}
-            <div className="premios-container">
+            <div className="premios-container contenedor-estandar">
             {
                 data.map((premio, index) => {
                     return (

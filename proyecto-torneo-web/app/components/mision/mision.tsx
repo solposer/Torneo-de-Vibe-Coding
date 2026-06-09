@@ -7,7 +7,7 @@ import { Plus, Users, TicketCheck, Tag } from 'lucide-react';
 export default function Mision() {
     return (
         <>
-            <div className="mision-wrapper">
+            <div className="mision-wrapper contenedor-estandar">
                 {/* COLUMNA IZQUIERDA */}
                 <div className="mision-izquierda">
                     <div className="mision-header">
@@ -42,18 +42,20 @@ export default function Mision() {
                     </div>
                 </div>
             </div>
-
-            <p className="subtitulos-plomos llevas">TE LLEVAS</p>
-            <div className="beneficios-container">
-                {data.beneficios.map((beneficio, index) => (
-                    <CardsBeneficios
-                        key={index}
-                        icono={beneficio.icono}
-                        titulo={beneficio.titulo}
-                        descripcion={beneficio.descripcion}
-                    />
-                ))}
-            </div>
+            <section className="contenedor-estandar">
+                <p className="subtitulos-plomos llevas">TE LLEVAS</p>
+                <div className="beneficios-container">
+                    {data.beneficios.map((beneficio, index) => (
+                        <CardsBeneficios
+                            key={index}
+                            icono={beneficio.icono}
+                            titulo={beneficio.titulo}
+                            descripcion={beneficio.descripcion}
+                        />
+                    ))}
+                </div>
+            </section>
+            
         </>
     )
 }

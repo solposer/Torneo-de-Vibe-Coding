@@ -16,3 +16,9 @@
 p{
   margin-bottom: 40px;
 }
+
+.overflow-hidden {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative; /* Ayuda a contener elementos con comportamientos extraños */
+}

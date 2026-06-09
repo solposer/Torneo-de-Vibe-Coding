@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function Fechas(){
     return(
-        <div style={{width: '100%'}}>
-            <div className="fechas-header">
+        <>
+            <div className="fechas-header contenedor-estandar">
                 <Image 
                     src={"/calendario.png"}
                     alt={"calendario"}
@@ -15,7 +15,7 @@ export default function Fechas(){
                 />
                 <h1 className="fuente-titulos">Fechas importantes</h1>
             </div>
-            <div className="fechas-container">
+            <div className="fechas-container contenedor-estandar">
             {
                 data.fechasImportantes.map((fecha,index)=>{
                     return(

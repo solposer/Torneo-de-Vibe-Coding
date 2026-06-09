@@ -16,8 +16,8 @@ export default function PreguntasFrecuentesSection() {
     };
 
     return (
-        <section className="w-full font-sans rounded-sm" style={{ backgroundColor: '#000000', color: '#ffffff' }}>
-            <div className="preguntas-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '3rem', paddingLeft: '2rem' }}>
+        <section className="contenedor-estandar" >
+            <div>
                 <Image src="/duda.png" alt="duda" width={104} height={110} />
                 <h1 className="fuente-titulos">
                     Preguntas frecuentes

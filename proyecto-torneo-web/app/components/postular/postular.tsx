@@ -2,7 +2,7 @@ import data from "@/app/data/data.json"
 import "./postular.css"
 export default function Requerimientos() {
   return (
-    <div className="container-componente">
+    <div className="container-componente contenedor-estandar">
       <h1 className="fuente-titulos titulo-postular">¿Qué necesito para postular?</h1>
       <div>
         {data.toApply.map((requerimiento, index) => (
