@@ -20,3 +20,36 @@
     font-size:28px;
 
 }
+/* mobile */
+@media (max-width: 768px) {
+    .card-beneficios {
+        width: calc(50% - 8px);
+        height: auto;
+        padding: 20px;
+    }
+
+    .card-beneficios img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .subtitulo-beneficios {
+        font-size: 11px;
+        margin-bottom: 12px;
+    }
+
+    .descripcion-beneficios {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card-beneficios img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .subtitulo-beneficios {
+        font-size: 9px;
+    }
+}

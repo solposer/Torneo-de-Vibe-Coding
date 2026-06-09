@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Fechas(){
     return(
-        <>
+        <div style={{width: '100%'}}>
             <div className="fechas-header">
                 <Image 
                     src={"/calendario.png"}
@@ -31,7 +31,6 @@ export default function Fechas(){
                 })
             }
             </div>
-
-        </>
+        </div>
     )
 }

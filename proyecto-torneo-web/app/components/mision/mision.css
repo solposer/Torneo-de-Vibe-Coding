@@ -116,3 +116,47 @@
 .llevas{
     margin-bottom: 40px;
 }
+/* mobile */
+@media (max-width: 768px) {
+    .mision-wrapper {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    .mision-header {
+        margin-top: 40px;
+    }
+
+    .texto-principal {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .tematica {
+        font-size: 15px;
+        padding: 12px 16px;
+    }
+
+    .accesos {
+        width: 100%;
+        min-width: unset;
+        box-sizing: border-box;
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .subtitulos-plomos {
+        font-size: 15px;
+    }
+
+    .llevas {
+        margin-bottom: 24px;
+    }
+
+    .beneficios-container {
+        padding: 0 16px;
+        box-sizing: border-box;
+        justify-content: flex-start;
+    }
+}

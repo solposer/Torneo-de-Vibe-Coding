@@ -81,3 +81,40 @@
   width: 700px;
   margin: 0 auto;
 }
+/* mobile */
+/* ── criterios.css · responsive mobile ── */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.25rem 1rem;
+    gap: 2rem;
+  }
+
+  .criterios-header {
+    gap: 10px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+
+  .titulo {
+    font-size: 1rem;
+    max-width: 110px;
+  }
+
+  .lista {
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .porcentaje {
+    font-size: 1.25rem;
+    min-width: 52px;
+  }
+
+  .label {
+    font-size: 0.8rem;
+  }
+
+  .item {
+    gap: 0.75rem;
+  }
+}

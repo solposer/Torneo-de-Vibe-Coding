@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { Plus, X } from 'lucide-react';
 import { preguntasFrecuentes } from '@/app/data/fechas-preguntas-data.json';
 import Image from 'next/image'
+import './preguntas.css'
 
 export default function PreguntasFrecuentesSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(3);
@@ -15,8 +16,8 @@ export default function PreguntasFrecuentesSection() {
     };
 
     return (
-        <section className="w-full p-8 md:p-12 font-sans rounded-sm" style={{ backgroundColor: '#000000', color: '#ffffff' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '3rem', paddingLeft: '2rem' }}>
+        <section className="w-full font-sans rounded-sm" style={{ backgroundColor: '#000000', color: '#ffffff' }}>
+            <div className="preguntas-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '3rem', paddingLeft: '2rem' }}>
                 <Image src="/duda.png" alt="duda" width={104} height={110} />
                 <h1 className="fuente-titulos">
                     Preguntas frecuentes
@@ -30,6 +31,7 @@ export default function PreguntasFrecuentesSection() {
                     return (
                         <div
                             key={index}
+                            className="faq-item"
                             style={{
                                 paddingTop: '1.5rem',
                                 paddingBottom: '1.5rem',
@@ -54,7 +56,7 @@ export default function PreguntasFrecuentesSection() {
                                     color: 'inherit',
                                 }}
                             >
-                                <h3 style={{
+                                <h3 className="faq-pregunta" style={{
                                     color: isOpen ? '#ffffff' : hoveredIndex === index ? '#F0197D' : '#d1d5db',
                                     fontSize: '24px',
                                     fontWeight: 500,
@@ -86,7 +88,7 @@ export default function PreguntasFrecuentesSection() {
                                 transition: 'grid-template-rows 0.3s ease-in-out, opacity 0.3s ease-in-out, margin-top 0.3s ease-in-out',
                             }}>
                                 <div style={{ overflow: 'hidden' }}>
-                                    <p style={{
+                                    <p className="faq-respuesta" style={{
                                         color: '#9ca3af',
                                         fontSize: '20px',
                                         lineHeight: '1.6',

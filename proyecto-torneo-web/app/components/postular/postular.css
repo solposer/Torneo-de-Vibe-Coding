@@ -45,3 +45,30 @@
     margin-bottom: 80px;
     margin-top: 80px;
 }
+/* mobile */
+
+@media (max-width: 768px) {
+    .container-componente {
+        padding: 20px 16px;
+    }
+
+    .titulo-postular {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+
+    .container-requerimientos {
+        gap: 12px;
+    }
+
+    .numero {
+        width: 42px;
+        height: 42px;
+        font-size: 15px;
+    }
+
+    .requerimiento {
+        font-size: 16px;
+    }
+}

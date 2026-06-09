@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    .faq-item {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+
+    .preguntas-header {
+        padding-left: 0 !important;
+        margin-bottom: 2rem !important;
+        justify-content: center;
+    }
+
+    .faq-pregunta {
+        font-size: 14px !important;
+    }
+
+    .faq-respuesta {
+        font-size: 14px !important;
+        padding-right: 0 !important;
+    }
+
+    section {
+        padding: 0.5rem !important;
+    }
+}

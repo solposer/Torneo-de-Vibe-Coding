@@ -56,3 +56,36 @@
     border-color: var(--color-blanco);
     background-color: #ffffff15;
 }
+/* mobile */
+@media (max-width: 768px) {
+    .fecha {
+        gap: 14px;
+        width: 100%;
+        max-width: 320px;
+        justify-content: flex-start;
+    }
+
+    .fecha-cuadro {
+        width: 72px;
+        height: 72px;
+        border-radius: 12px;
+        flex-shrink: 0;
+    }
+
+    .fecha-dia {
+        font-size: 20px;
+    }
+
+    .fecha-mes {
+        font-size: 15px;
+    }
+
+    .fecha-titulo {
+        font-size: 16px;
+        width: auto;
+    }
+
+    .fecha-descripcion {
+        font-size: 15px;
+    }
+}

@@ -69,3 +69,29 @@
 .premio-descripcion--2{
     color:var(--color-celeste-claro)
 }
+/* mobile */
+@media (max-width: 768px) {
+    .card-premios {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+    }
+
+    .premio-puesto {
+        font-size: 20px;
+    }
+
+    .premio-descripcion {
+        font-size: 18px;
+    }
+
+    .premio-badge {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .premio-header img {
+        width: 56px;
+        height: auto;
+    }
+}

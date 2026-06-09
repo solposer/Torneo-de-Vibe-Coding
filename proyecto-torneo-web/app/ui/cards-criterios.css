@@ -83,3 +83,20 @@
 .fuente-color-4{
     font-palette: --paleta-celeste
 }
+/* mobile */
+/* ── card-criterios.css · responsive mobile ── */
+
+@media (max-width: 768px) {
+  .card-criterios {
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .criterio-porcentaje {
+    font-size: 1.6rem;
+  }
+
+  .criterio-descripcion {
+    font-size: 15px;
+  }
+}
