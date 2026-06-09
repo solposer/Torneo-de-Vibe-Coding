@@ -1,16 +1,83 @@
-.criterios-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center
-}
+/* CriteriosEvaluacion.module.css */
 
 .criterios-header {
-    display: flex;
+   display: flex;
     flex-direction: row;
     align-items: center;
     gap: 16px;
     margin-bottom: 80px;
     margin-top: 80px;
+}
+
+.container {
+  background-color: #000;
+  color: #fff;
+  padding: 2.5rem 3rem;
+  font-family: var(--fuente-parrafos), monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items:center
+}
+
+.titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  font-family: var(--fuente-titulos);
+  max-width: 160px; /* hace que rompa en dos líneas como en la imagen */
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.porcentaje {
+  font-size: 2rem;
+  font-weight: 700;
+  min-width: 80px;
+  font-family: var(--fuente-titulos);
+}
+
+.labelWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.label {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.linea {
+  height: 2px;
+  width: 100%;
+  border-radius: 1px;
+}
+
+.barraFondo {
+  width: 100%;
+  height: 6px;
+  background-color: #1a1a1a;
+  border-radius: 3px;
+}
+
+.barraRelleno {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 700px;
+  margin: 0 auto;
 }

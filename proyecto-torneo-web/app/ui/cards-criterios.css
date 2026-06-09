@@ -1,28 +1,65 @@
-.card-criterios{
-    width: 261px;
-    height: 258px;
-    background: var(--color-negro-claro);
-    border-radius: 18px;
-    border: 1px solid var(--color-plomo);
-    padding: 12px;
+
+.card-criterios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem; 
 }
-.criterio-subtitulo{
-    font-size: 40px;
-    text-align: center;
-    margin: 0;
-    margin-top: 16px; /* mismo para todos */
+
+.criterio-porcentaje {
+  font-size: 2.5rem; 
+  text-align: right;
 }
-.criterio-descripcion{
-    font-size: 30px;
-    color: var(--color-plomo);
-    text-align: center;
-    margin: 8px 0 0 0;
+
+.criterio-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
 }
+
+.criterio-descripcion {
+  margin: 0;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.barra-fondo {
+  width: 100%;
+  height: 4px;
+  background-color: #1a1a1a;
+  border-radius: 2px;
+}
+
+.barra-relleno {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.barra-fondo {
+  width: 100%;
+  height: 6px;
+  background-color: #1a1a1a;
+  border-radius: 3px;
+}
+
+.barra-relleno {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.barra-color-1 { background-color: #F0197D; }
+.barra-color-2 { background-color: #AF37A6; }
+.barra-color-3 { background-color: #7455CE; }
+.barra-color-4 { background-color: #2979FF; }
+
 @font-palette-values --paleta-fucsia1 {
   font-family:'Sixtyfour Convergence';
-  override-colors: 0 #8A012A, 
-    1 #8A012A, 2 #8A012A, 
-    3 #8A012A;
+  override-colors: 
+  0 #8A012A, 1 #8A012A, 2 #8A012A, 3 #8A012A;
 }
 
 @font-palette-values --paleta-morada1 {

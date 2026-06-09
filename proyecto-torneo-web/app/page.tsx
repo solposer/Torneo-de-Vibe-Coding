@@ -6,13 +6,14 @@ import Fechas from './components/fechas/fechas';
 import Footer from './components/footer/footer'
 import PreguntasFrecuentesSection from './components/preguntas/preguntas';
 import Requerimientos from './components/postular/postular';
+import Sponsors from './components/sponsors/sponsors'
 export default function Home() {
   return (
     <>
       <Hero />
+      <Sponsors/>
       <Mision />
-      { /*<CardsPremios />
-      <CardsCriterios />
+      { /*
       <FechasCronograma />
       */}
       <Requerimientos/>

@@ -1,0 +1,20 @@
+{
+  "sponsors": [
+    {
+      "name": "BlockChain-PUCP",
+      "logo": "/sponsors/blockChain.png"
+    },
+    {
+      "name": "CarreraHaus",
+      "logo": "/sponsors/carreraHouse.png"
+    },
+    {
+      "name": "GDG",
+      "logo": "/sponsors/gdg.png"
+    },
+    {
+        "name":"datux",
+        "logo":"/sponsors/datux.png"
+    }
+  ]
+}
