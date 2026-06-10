@@ -22,3 +22,10 @@ p{
   width: 100%;
   position: relative; /* Ayuda a contener elementos con comportamientos extraños */
 }
+
+@media (max-width: 768px) {
+  .slide-track {
+    gap: 1.5rem;
+    animation-duration: 15s; /* más rápido = menos espacio vacío en pantalla chica */
+  }
+}

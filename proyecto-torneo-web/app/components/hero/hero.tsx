@@ -22,9 +22,9 @@ export default function Hero() {
                         </p>
                     </article>
                     <article className="hero-right">
-                        <Boton />
+                        <Boton tipo="primario" />
                         <p>Cierra el 15 de junio</p>
-                        <Boton />
+                        <Boton tipo="secundario" />
                     </article>
                 </section>                
             </main>

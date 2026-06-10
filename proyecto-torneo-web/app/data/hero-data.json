@@ -1,7 +1,17 @@
-{    
-    "linkPostulacion": "#",
-    "linkBasesOficiales": "#",
-    "fechaEvento":{
+{
+    "botones": [
+        {
+            "texto": "Postular",
+            "link": "https://gdg.community.dev/e/mrcs5u/",
+            "tipo":"primario"
+        },
+        {
+            "texto": "Ver bases oficiales",
+            "link": "https://docs.google.com/document/d/1-IdTBLJc1JqrTvABOV9m5xnUY4zczWN3op_fnWIWFpw",
+            "tipo":"secundario"
+        }
+    ],
+    "fechaEvento": {
         "fecha": "26 JUN 2026",
         "dia": "viernes"
     },

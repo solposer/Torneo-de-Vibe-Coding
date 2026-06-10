@@ -1,26 +1,22 @@
-/* Contenedor fluido que acomoda las tarjetas automáticamente */
 .cronograma-grid {
   display: grid;
   gap: 1.5rem;
-} 
+}
 
-/* Diseño de la tarjeta */
 .actividad-item {
   background-color: var(--color-negro-claro);
   padding: 1.5rem;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  /* Efecto hover opcional para que se sienta interactivo */
   transition: transform 0.2s ease;
-   width: 100%;
+  width: 100%;
 }
 
 .actividad-item:hover {
   transform: translateY(-4px);
 }
 
-/* Modificamos las variantes para que pinten el borde superior de la tarjeta */
 .variante-red {
   border-top: 4px solid var(--color-fucsia);
 }
@@ -29,7 +25,6 @@
   border-top: 4px solid var(--color-blanco-bordes);
 }
 
-/* Ajustes a la cabecera dentro de la tarjeta */
 .actividad-header {
   display: flex;
   align-items: center;
@@ -44,54 +39,47 @@
 }
 
 .variante-red .actividad-punto { background-color: var(--color-fucsia); }
-.variante-red .actividad-hora { color: var(--color-fucsia); }
+.variante-red .actividad-hora  { color: var(--color-fucsia); }
 
 .variante-white .actividad-punto { background-color: var(--color-plomo); }
-.variante-white .actividad-hora { color: var(--color-blanco-bordes); }
+.variante-white .actividad-hora  { color: var(--color-blanco-bordes); }
 
 .actividad-hora {
   font-size: 1.125rem;
   font-weight: bold;
 }
 
-/* Espaciado entre cada bloque de fase */
 .cronograma-fases-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem; 
+  gap: 3rem;
 }
 
-/* Título de la fase (Ej: Arranque y Setup) */
 .fase-titulo {
   font-size: 1.5rem;
-  color: var(--color-celeste-claro); /* o var(--color-fucsia) si prefieres */
+  color: var(--color-celeste-claro);
   margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--color-azul-oscuro);
   padding-bottom: 0.5rem;
 }
 
+/* ── Header con imagen + h1 ── */
+.fechas-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .fechas-header img {
-  width: 104px;
+  width: clamp(56px, 8vw, 104px);
   height: auto;
 }
 
 .fechas-header h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 
-@media (max-width: 768px) {
-  .cronograma-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-    .fechas-header img {
-    width: 60px;
-  }
-
-  .fechas-header h1 {
-    font-size: 2.25rem;
-  }
-}
-
+/* ── Media queries: primero el más grande ── */
 @media (max-width: 1024px) {
   .fechas-header img {
     width: 80px;
@@ -99,5 +87,19 @@
 
   .fechas-header h1 {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cronograma-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .fechas-header img {
+    width: 60px;
+  }
+
+  .fechas-header h1 {
+    font-size: 2.25rem;
   }
 }

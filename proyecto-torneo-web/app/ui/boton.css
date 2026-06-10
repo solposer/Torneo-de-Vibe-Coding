@@ -1,11 +1,24 @@
-.boton-postular{
-    color:var(--color-blanco);
-    background:var(--gradiente-principal);
-    width: 229px; 
+.boton-primario {
+    color: var(--color-blanco);
+    background: var(--gradiente-principal);
+    width: 229px;
     height: 52px;
-    border:none;
-    border-radius:50px;
+    border: none;
+    border-radius: 50px;
     font-size: 16px;
+    font-family: var(--fuente-subtitulos);
+    font-palette: --paleta-blanca;
+    cursor: pointer;
 }
 
-
+.boton-secundario {
+    padding: 0.9rem 2rem;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background:
+        linear-gradient(#000, #000) padding-box,
+        linear-gradient(90deg,
+            var(--color-fucsia), var(--color-celeste-oscuro)) border-box;
+    cursor: pointer;
+    font-family: var(--fuente-parrafos);
+}

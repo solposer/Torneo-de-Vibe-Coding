@@ -111,10 +111,6 @@ body {
   override-colors: 0 #033A82, 1 #12315C, 2 #0C6EF5, 3 #2979FF
 }
 
-h1{
-  font-size: 32px;
-}
-
 
 @media (max-width: 768px) {
   .contenedor-estandar {

@@ -83,6 +83,7 @@
     flex-direction: row;
     flex-wrap: wrap;    
     justify-content: space-evenly;
+    gap: 24px; /* ← esto */
 }
 
 .subtitulos-plomos{
@@ -96,21 +97,6 @@
   override-colors: 0 #695E5E, 1 #AFABAB, 2 #786B6B, 3 #695E5E
 }
 
-@media (max-width: 768px) {
-    .mision-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .accesos {
-        width: 100%;
-        min-width: unset;
-        box-sizing: border-box;
-    }
-
-    .mision-derecha {
-        width: 100%;
-    }
-}
 
 .llevas{
     margin-bottom: 40px;

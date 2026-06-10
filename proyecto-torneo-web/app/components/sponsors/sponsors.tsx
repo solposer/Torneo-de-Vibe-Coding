@@ -14,7 +14,7 @@ export default function Sponsors() {
             alt={sponsor.name}
             width={160}
             height={40}
-            style={{ objectFit: 'contain', width: '90%', height: 'auto' }}
+            style={{ objectFit: 'contain', width: 'clamp(70px, 15vw, 140px)', height: 'auto' }}
           />
           ))}
         </div>

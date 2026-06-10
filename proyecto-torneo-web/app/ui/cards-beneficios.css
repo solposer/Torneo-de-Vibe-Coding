@@ -1,7 +1,9 @@
 .card-beneficios {
     width: fit-content;
-    max-width: 350;
-    height: auto;        /* se adapta al contenido */
+    height: 100%; 
+    max-width: 350px;
+    min-height: 200px; /* ← altura mínima para que haya espacio */
+    height: auto;
     background: var(--color-negro-claro);
     border: 0.8px solid var(--color-plomo);
     border-radius: 18px;
@@ -9,6 +11,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    justify-content: center;
 }
 
 .card-header {
@@ -37,8 +40,8 @@
 
 @media (max-width: 768px) {
     .card-beneficios {
-        max-width: 161;
-        max-height: unset;
+        max-width: 161px; /* también faltaba el px */
+        min-height: 130px; /* ← proporcional */
         padding: 10px;
         gap: 10px;
     }
