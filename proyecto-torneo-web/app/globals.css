@@ -67,7 +67,8 @@ body {
   background-color: black;
   color: white;
   min-height: 100vh;  
-  
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* Ajusta este valor según la altura de tu Header */
   background-image:     
     repeating-radial-gradient(
       circle at center,

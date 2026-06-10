@@ -11,19 +11,19 @@ import Cronograma from './components/cronograma/cronograma';
 export default function Home() {
   return (
     <>
-      <Hero />
+      <div id="inicio"><Hero /></div>
       <Sponsors />    
-      <Mision />
-      <Fechas />
-      <Requerimientos />
-
-      <Cronograma />
+      <div id="mision"><Mision /></div>
+      <div id="fechas"><Fechas /></div>
+      <div id="requerimientos"><Requerimientos /></div>
+      
+      <div id="cronograma"><Cronograma /></div>
       <div className="seccion-criterios-fechas">
-        <Criterios />
-        <Premios />
+        <div id="criterios"><Criterios /></div>
+        <div id="premios"><Premios /></div>
       </div>
-
-      <PreguntasFrecuentesSection />
+      
+      <div id="faq"><PreguntasFrecuentesSection /></div>
       <Footer />
     </>
   );
