@@ -18,9 +18,9 @@ export default function Home() {
       <div id="requerimientos"><Requerimientos /></div>
       
       <div id="cronograma"><Cronograma /></div>
-      <div className="seccion-criterios-fechas">
-        <div id="criterios"><Criterios /></div>
-        <div id="premios"><Premios /></div>
+      <div id="criterios-premios" className="seccion-criterios-fechas">
+        <Criterios />
+        <Premios />
       </div>
       
       <div id="faq"><PreguntasFrecuentesSection /></div>
