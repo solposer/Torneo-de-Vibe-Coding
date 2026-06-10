@@ -1,6 +1,6 @@
 .card-beneficios {
     width: fit-content;
-    max-width: 400;
+    max-width: 350;
     height: auto;        /* se adapta al contenido */
     background: var(--color-negro-claro);
     border: 0.8px solid var(--color-plomo);
