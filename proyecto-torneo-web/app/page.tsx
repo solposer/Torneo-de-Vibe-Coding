@@ -7,6 +7,7 @@ import Footer from './components/footer/footer'
 import PreguntasFrecuentesSection from './components/preguntas/preguntas';
 import Requerimientos from './components/postular/postular';
 import Sponsors from './components/sponsors/sponsors'
+import Cronograma from './components/cronograma/cronograma';
 export default function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Home() {
       */}
       <Requerimientos/>
       <Premios />
+      <Cronograma />
       <Criterios/>
       <Fechas/>
       <PreguntasFrecuentesSection/>
