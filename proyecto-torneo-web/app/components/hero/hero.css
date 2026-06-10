@@ -1,19 +1,22 @@
-.hero-main{
+.hero-main {
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Cambia a center si prefieres el logo al medio */
+    margin-bottom: 1rem;
+    height: min-content;
 }
 
 .hero-content {
-    flex: 1;
+    width: 100%;
     display: flex;
-    gap: 1rem;
-    margin-top: 70px;    
-}
-
-.hero-image {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%) translateY(60%);
+    gap: 2rem;
+    align-items: center; /* Alinea los textos con los botones verticalmente */
 }
 
 .hero-left, 
@@ -45,9 +48,10 @@
     font-size: large;
     display: flex;
     align-items: center;
-    margin: 40px 0px;    
+    margin: 25px 0px;    
     justify-content: space-between;
     gap: 3rem;    
+    text-align: center;
     
 }
 
@@ -73,11 +77,12 @@
 }
 
 .card-lugar {
-    width: 560px;    
+    width: 100%;
+    max-width: 560px;    
     background-color: rgba(45, 29, 35, 0.5);
     border: 1px solid var(--color-fucsia);
     border-radius: 8px;
-    overflow: hidden; /* Asegura que el link no se salga de las esquinas redondeadas */
+    overflow: hidden;
 }
 
 /* El enlace interior (layout y reseteo de estilos) */
@@ -100,13 +105,23 @@
     flex-direction: column;
 }
 
+.info-lugar h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.info-lugar p {
+    font-size: 14px;
+    font-weight: 100;
+}
+
 .info-lugar h4, .info-lugar p {
     margin: 0;
 }
 
 .fechas-grupo {
   display: flex;  
-  gap: 10rem;
+  gap: 4rem; /* Reducido de 10rem para que no empuje en pantallas medianas */
   justify-content: center;
 }
 
@@ -115,6 +130,7 @@
     padding-bottom: 12px;
     font-family: var(--fuente-torneo-vibe);
 }
+
 
 .text-vibecoding {
     font-size: 86px;    
@@ -128,12 +144,63 @@
 }
 
 .hero-left p {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 @keyframes moverGradiente {
     to {
         /* Desplaza el fondo hacia la izquierda, revelando los colores ocultos */
         background-position: 200% center; 
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center; /* Centramos el texto para que se vea mejor apilado */
+        padding-bottom: 8px;
+    }
+
+    .hero-left, 
+    .hero-right {
+        align-items: center; /* Centra los elementos internos (como los botones) */
+    }
+
+    /* Achicamos la fuente principal para que no se desborde del ancho de la pantalla */
+    .text-vibecoding {
+        font-size: 56px; 
+    }
+
+    .hero-left p {
+        font-size: 16px; /* Ajuste para mejor lectura en celular */
+    }
+
+    /* Apilamos las fechas y ubicación */
+    .fechas-section {
+        margin: 10px 10px;
+        padding-top: 5px;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: stretch; /* Estira la tarjeta de lugar a los lados */
+    }
+
+    .fechas-grupo {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /* Centramos el contenido de cada fecha individualmente */
+    .caja-fecha {
+        justify-content: center; 
+    }
+
+    .info-lugar h4 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .info-lugar p {
+        font-size: 12px;
+        font-weight: 100;
     }
 }

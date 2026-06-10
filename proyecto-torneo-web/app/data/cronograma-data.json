@@ -6,28 +6,28 @@
         {
           "hora": "09:00",
           "subtitulo": "Recepción y Merch",
-          "descripcion": "Check-in, entrega de pulseras y asignación de mesas con música lofi de fondo."
+          "descripcion": "Check-in y asignación de mesas."
         },
         {
           "hora": "09:30",
           "subtitulo": "Kickoff y Giro Secreto",
-          "descripcion": "Presentación oficial, revelación de reglas, sponsors y el requerimiento sorpresa."
+          "descripcion": "Presentación oficial y revelación del requerimiento sorpresa."
         },
         {
           "hora": "10:00",
           "subtitulo": "Taller Relámpago: Orquestación con IA",
           "descripcion": "Enfoque en cómo usar modelos generativos como copilotos sin perder el control del código."
-        },
-        {
-          "hora": "10:45",
-          "subtitulo": "Sprint 0: Arquitectura y Especificación",
-          "descripcion": "Bloque de prototipado. HITO 1 (11:30 AM): Repositorio con README, diagramas (Mermaid/C4) y stack definido."
         }
       ]
     },
     {
       "fase": "Sprint 1 y Receso",
       "actividades": [
+        {
+          "hora": "10:45",
+          "subtitulo": "Sprint 0: Arquitectura y Especificación",
+          "descripcion": "Bloque de prototipado. HITO 1 (11:30 AM): Repositorio con README, diagramas (Mermaid/C4) y stack definido."
+        },
         {
           "hora": "11:30",
           "subtitulo": "Sprint 1: Frontend & Modularidad",

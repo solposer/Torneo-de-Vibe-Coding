@@ -7,20 +7,19 @@ import data from '@/app/data/hero-data.json'
 export default function Hero() {
     return (
         <>
-            <main className="hero-main contenedor-estandar">
-                <Image className='hero-image' alt='logo del Torneo de Vibecoding' src='/logo-torneo.png'  width={187} height={135}/>
+            <main className="hero-main contenedor-estandar">    
+                <div className="hero-logo-container">
+                    <Image alt='logo del Torneo de Vibecoding' src='/logo-torneo.png' width={150} height={120}/>
+                </div>            
                 <section className="hero-content">  
                     <article className="hero-left">
                         <div>                            
                             <h2 className='fuente-subtitulos text-torneo'>Torneo de</h2>
-                            {/* Cambiar color de la fuente  */}
                             <h1 className='fuente-torneo-vibe text-vibecoding'><strong>Vibe Coding</strong></h1>
                         </div>           
-                        {/*Acá estoy pensando cambiar el texto para que sea más corto por que no se ve tan bien con la fuente
-                            Le cambio la fuente porque con la normal se v   e que hay dmsdas fuetnes
-                        */}             
-                        <p className='fuente-subtitulos'                           
-                        >Estás list@ para ganar grandes premios, construir proyectos con <strong>IA</strong> y hacer networking con personas de la <strong>industria</strong></p>
+                        <p className='fuente-subtitulos font-size-hero'>
+                            Estás list@ para ganar grandes premios, construir proyectos con <strong>IA</strong> y hacer networking con personas de la <strong>industria</strong>
+                        </p>
                     </article>
                     <article className="hero-right">
                         <Boton />

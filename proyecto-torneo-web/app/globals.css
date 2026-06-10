@@ -76,8 +76,8 @@ body {
       rgba(240, 25, 125, 0.05) 40px,
       rgba(240, 25, 125, 0.05) 41px
     ),    
-    radial-gradient(circle at 0% 0%, rgba(250, 15, 125, 0.2) 0%, transparent 30%),    
-    radial-gradient(circle at 100% 100%, rgba(31, 98, 175, 0.4) 0%, transparent 40%);
+    radial-gradient(circle at 0% 0%, rgba(240, 25, 125, 0.15) 10%, transparent 40%),    
+    radial-gradient(circle at 100% 100%, rgba(21, 101, 192, 0.12) 10%, transparent 40%);
     
   background-attachment: fixed;
 }
@@ -88,7 +88,7 @@ body {
 
 .fuente-subtitulos {
   font-family: var(--fuente-subtitulos);
-  font-palette: --paleta-blanca;
+  font-palette: --paleta-blanca;  
 }
 
 @font-palette-values --paleta-blanca {
@@ -110,24 +110,19 @@ body {
   override-colors: 0 #033A82, 1 #12315C, 2 #0C6EF5, 3 #2979FF
 }
 
-/* globals.css */
-.seccion-criterios-fechas {
-    display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  align-items: flex-start;
-  padding: 0 4rem;
-  box-sizing: border-box;
+h1{
+  font-size: 32px;
 }
 
-.seccion-criterios-fechas > * {
-  flex: 1;
-  min-width: 0;/* evita que el contenido desborde */
-}
 
 @media (max-width: 768px) {
-  .seccion-criterios-fechas {
-    flex-direction: column;
-    align-items: center;
+  .contenedor-estandar {
+    /* Reducimos el padding lateral de 80px a 20px (o 16px si prefieres más espacio) */
+    padding: 0px 20px; 
+  }
+
+  /* Opcional: Reducir ligeramente los títulos principales para que no rompan en tantas líneas */
+  h1 {
+    font-size: 24px;
   }
 }
