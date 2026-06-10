@@ -1,41 +1,32 @@
-
 .card-criterios {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1.5rem;
-  margin-bottom: 2rem; 
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .criterio-porcentaje {
-  font-size: 2.5rem; 
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
   text-align: right;
+  min-width: clamp(80px, 10vw, 120px); /* ← ancho mínimo que también escala */
+  flex-shrink: 0;
 }
 
 .criterio-info {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  flex: 1;
+  flex: 1; /* ocupa todo el ancho restante */
+  text-align: left; /* ← descripción alineada a la izquierda */
 }
 
 .criterio-descripcion {
   margin: 0;
   color: #ffffff;
-  font-size: 30px;
-}
-
-.barra-fondo {
-  width: 100%;
-  height: 4px;
-  background-color: #1a1a1a;
-  border-radius: 2px;
-}
-
-.barra-relleno {
-  height: 100%;
-  border-radius: 2px;
-  transition: width 0.5s ease;
+  font-size: clamp(0.9rem, 2.5vw, 1.875rem);
+  text-align: left;
 }
 
 .barra-fondo {
@@ -57,43 +48,33 @@
 .barra-color-4 { background-color: #2979FF; }
 
 @font-palette-values --paleta-fucsia1 {
-  font-family:'Sixtyfour Convergence';
-  override-colors: 
-  0 #8A012A, 1 #8A012A, 2 #8A012A, 3 #8A012A;
+  font-family: 'Sixtyfour Convergence';
+  override-colors: 0 #8A012A, 1 #8A012A, 2 #8A012A, 3 #8A012A;
 }
 
 @font-palette-values --paleta-morada1 {
-  font-family:'Sixtyfour Convergence';
-  override-colors: 0 #631852, 1 #631852, 2 #631852, 3 #631852
+  font-family: 'Sixtyfour Convergence';
+  override-colors: 0 #631852, 1 #631852, 2 #631852, 3 #631852;
 }
+
 @font-palette-values --paleta-morada2 {
-  font-family:'Sixtyfour Convergence';
+  font-family: 'Sixtyfour Convergence';
   override-colors: 0 #56378A, 1 #56378A, 2 #56378A, 3 #56378A;
 }
 
-.fuente-color-1{
-  font-palette:--paleta-fucsia1;
-}
-.fuente-color-2{
-    font-palette: --paleta-morada1
-}
-.fuente-color-3{
-    font-palette: --paleta-morada2
-}
-.fuente-color-4{
-    font-palette: --paleta-celeste
-}
-/* mobile */
-/* ── card-criterios.css · responsive mobile ── */
+.fuente-color-1 { font-palette: --paleta-fucsia1; }
+.fuente-color-2 { font-palette: --paleta-morada1; }
+.fuente-color-3 { font-palette: --paleta-morada2; }
+.fuente-color-4 { font-palette: --paleta-celeste; }
 
 @media (max-width: 768px) {
   .card-criterios {
     gap: 1rem;
-    margin-bottom: 1.25rem;
   }
 
   .criterio-porcentaje {
     font-size: 1.6rem;
+    min-width: 52px;
   }
 
   .criterio-descripcion {

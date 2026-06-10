@@ -51,7 +51,7 @@
 
 .actividad-hora {
   font-size: 1.125rem;
-  font-family: var(--fuente-torneo-vibe);
+  font-weight: bold;
 }
 
 /* Espaciado entre cada bloque de fase */

@@ -1,12 +1,11 @@
-/* CriteriosEvaluacion.module.css */
-
 .criterios-header {
-   display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 80px;
-    margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+  margin-top: 80px;
+  justify-content: center;
 }
 
 .container {  
@@ -15,72 +14,31 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  align-items:center
-}
-
-.titulo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.3;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #fff;
-  font-family: var(--fuente-titulos);
-  max-width: 160px; /* hace que rompa en dos líneas como en la imagen */
-}
-.item {
-  display: flex;
   align-items: center;
-  gap: 1.25rem;
-}
-
-.porcentaje {
-  font-size: 2rem;
-  font-weight: 700;
-  min-width: 80px;
-  font-family: var(--fuente-titulos);
-}
-
-.labelWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  flex: 1;
-}
-
-.label {
-  font-size: 1rem;
-  color: #fff;
-  font-weight: 400;
-}
-
-.linea {
-  height: 2px;
   width: 100%;
-  border-radius: 1px;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left; /* ← era center */
 }
 
-.barraFondo {
-  width: 100%;
-  height: 6px;
-  background-color: #1a1a1a;
-  border-radius: 3px;
-}
-
-.barraRelleno {
-  height: 100%;
-  border-radius: 3px;
-  transition: width 0.5s ease;
-}
 .lista {
+  width: 95%;
+  max-width: 95%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  width: 700px;
-  margin: 0 auto;
 }
-/* mobile */
-/* ── criterios.css · responsive mobile ── */
+
+.criterios-header h1 {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+}
+
+.criterios-header img {
+  width: clamp(60px, 8vw, 104px);
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 1.25rem 1rem;
@@ -91,28 +49,13 @@
     gap: 10px;
     margin-bottom: 32px;
     margin-top: 32px;
-  }
-
-  .titulo {
-    font-size: 1rem;
-    max-width: 110px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .lista {
     width: 100%;
     gap: 1.5rem;
-  }
-
-  .porcentaje {
-    font-size: 1.25rem;
-    min-width: 52px;
-  }
-
-  .label {
-    font-size: 0.8rem;
-  }
-
-  .item {
-    gap: 0.75rem;
   }
 }

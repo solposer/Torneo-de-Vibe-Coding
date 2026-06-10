@@ -6,10 +6,13 @@
         padding-bottom: 0.75rem !important;
     }
 
+    section {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
+
     .preguntas-header {
-        padding-left: 0 !important;
-        margin-bottom: 2rem !important;
-        justify-content: center;
+        margin-bottom: 24px !important;
     }
 
     .faq-pregunta {
@@ -21,7 +24,4 @@
         padding-right: 0 !important;
     }
 
-    section {
-        padding: 0.5rem !important;
-    }
 }

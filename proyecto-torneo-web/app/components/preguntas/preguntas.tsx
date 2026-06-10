@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState } from 'react';
@@ -16,10 +15,28 @@ export default function PreguntasFrecuentesSection() {
     };
 
     return (
-        <section className="contenedor-estandar" >
-            <div>
-                <Image src="/duda.png" alt="duda" width={104} height={110} />
-                <h1 className="fuente-titulos">
+        <section className="contenedor-estandar" style={{ paddingTop: '60px', paddingBottom: '60px' }}>
+            <div
+                className="preguntas-header"
+                style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '1rem', marginBottom: '40px' }}
+            >
+                <div style={{
+                    width: 'clamp(60px, 8vw, 104px)',
+                    height: 'clamp(64px, 8.5vw, 110px)',
+                    position: 'relative',
+                    flexShrink: 0
+                }}>
+                    <Image
+                        src="/duda.png"
+                        alt="duda"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                    />
+                </div>
+                <h1
+                    className="fuente-titulos"
+                    style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)', margin: 0, marginLeft: '30px' }}
+                >
                     Preguntas frecuentes
                 </h1>
             </div>

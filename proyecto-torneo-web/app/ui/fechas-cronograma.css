@@ -11,8 +11,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius:16px ;
-    border: 2px solid
 }
 .fecha-dia{
     font-size: 40px;
@@ -51,12 +49,43 @@
 .fecha-cuadro-fucsia{
     border-color: var(--color-fucsia);
     background: var(--color-fucsia-oscuro);
+    border: 2px solid var(--color-fucsia); 
+    border-radius:16px ;
 }
 .fecha-cuadro-blanco{
-    border-color: var(--color-blanco);
     background-color: #ffffff15;
+    border-radius:16px ;
+    border: 2px solid var(--color-blanco);
 }
 /* mobile */
+/* clamp section */
+.fecha-cuadro {
+  width: clamp(72px, 10vw, 110px);
+  height: clamp(72px, 10vw, 110px);
+  border-radius: clamp(12px, 1.5vw, 16px);
+  /* ← elimina el border: 2px solid de aquí */
+}
+
+.fecha-dia {
+  font-size: clamp(1.25rem, 3.5vw, 2.5rem); /* 40px → clamp */
+}
+
+.fecha-mes {
+  font-size: clamp(0.9rem, 2vw, 1.5rem); /* 24px → clamp */
+}
+
+.fecha-titulo {
+  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 2rem); /* 32px → clamp */
+  width: clamp(140px, 20vw, 234px);
+  margin: 0;
+}
+
+.fecha-descripcion {
+  font-size: clamp(0.9rem, 2vw, 1.5rem); /* 24px → clamp */
+  margin: 0;
+}
+
 @media (max-width: 768px) {
     .fecha {
         gap: 14px;

@@ -5,7 +5,7 @@ import './criterios.css';
 
 export default function Criterios() {
     return (
-        <section className="container contenedor-estandar">
+        <section className="container">
             <div className="criterios-header">
                 <Image
                     src={"/critico.png"}
@@ -13,7 +13,7 @@ export default function Criterios() {
                     width={104}
                     height={100}
                 />
-                <h1 className="fuente-titulos">Criterios de evaluacion</h1>
+                <h1 className="fuente-titulos">Criterios a evaluar</h1>
             </div>
             <div className="lista contenedor-estandar">
                 {criterios.map((card, index) => (

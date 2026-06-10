@@ -12,17 +12,20 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Sponsors/>
+      <Sponsors />
       <Mision />
       { /*
       <FechasCronograma />
       */}
-      <Requerimientos/>
+      <Requerimientos />
       <Premios />
       <Cronograma />
-      <Criterios/>
-      <Fechas/>
-      <PreguntasFrecuentesSection/>
+      <div className="seccion-criterios-fechas">
+        <Criterios />
+        <Fechas />
+      </div>
+
+      <PreguntasFrecuentesSection />
       <Footer />
     </>
   );

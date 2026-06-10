@@ -3,10 +3,11 @@ import CardsFechas from '@/app/ui/fechas-cronograma'
 import "./fechas.css"
 import Image from "next/image";
 
+// fechas.tsx
 export default function Fechas(){
     return(
-        <>
-            <div className="fechas-header contenedor-estandar">
+        <div className="fechas-seccion">
+            <div className="fechas-header">
                 <Image 
                     src={"/calendario.png"}
                     alt={"calendario"}
@@ -15,10 +16,9 @@ export default function Fechas(){
                 />
                 <h1 className="fuente-titulos">Fechas importantes</h1>
             </div>
-            <div className="fechas-container contenedor-estandar">
-            {
-                data.fechasImportantes.map((fecha,index)=>{
-                    return(
+            <div className="fechas-container">
+                {
+                    data.fechasImportantes.map((fecha, index) => (
                         <CardsFechas 
                             key={index}
                             dia={fecha.dia.split(" ")[0]}
@@ -27,10 +27,9 @@ export default function Fechas(){
                             descripcion={fecha.descripcion}
                             highlight={fecha.importante}
                         />
-                    )
-                })
-            }
+                    ))
+                }
             </div>
-        </>
+        </div>
     )
 }
