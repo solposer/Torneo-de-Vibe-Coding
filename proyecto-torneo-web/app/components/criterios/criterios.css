@@ -9,10 +9,8 @@
     margin-top: 80px;
 }
 
-.container {
-  background-color: #000;
-  color: #fff;
-  padding: 2.5rem 3rem;
+.container {  
+  color: #fff;  
   font-family: var(--fuente-parrafos), monospace;
   display: flex;
   flex-direction: column;
