@@ -23,7 +23,9 @@ export default function Cronograma() {
             <h2 className="fase-titulo fuente-subtitulos">{faseData.fase}</h2>
             
             {/* Grilla de actividades para esta fase específica */}
-            <div className="cronograma-grid">
+            <div className="cronograma-grid" style={{
+    gridTemplateColumns: `repeat(${faseData.actividades.length}, 1fr)`,
+  }}>
               {faseData.actividades.map((actividad, index) => {        
                 const variantType = index % 3 === 0 || actividad.subtitulo.includes('Sprint') ? 'red' : 'white';
 

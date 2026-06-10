@@ -75,3 +75,21 @@
   margin-bottom: 0;
   line-height: 1.4;
 }
+@media (max-width: 768px) {
+  .actividad-hora {
+    font-size: 1rem;
+  }
+
+  .actividad-subtitulo {
+    font-size: 0.95rem;
+  }
+
+  .actividad-descripcion {
+    font-size: 0.8rem;
+  }
+  
+  .actividad-item {
+    padding: 1rem;
+  }
+
+}

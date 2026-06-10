@@ -1,9 +1,8 @@
 /* Contenedor fluido que acomoda las tarjetas automáticamente */
 .cronograma-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1.5rem;
-}
+} 
 
 /* Diseño de la tarjeta */
 .actividad-item {
@@ -14,6 +13,7 @@
   flex-direction: column;
   /* Efecto hover opcional para que se sienta interactivo */
   transition: transform 0.2s ease;
+   width: 100%;
 }
 
 .actividad-item:hover {
@@ -70,9 +70,34 @@
   padding-bottom: 0.5rem;
 }
 
-/* Contenedor fluido de las tarjetas */
-.cronograma-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.5rem;
+.fechas-header img {
+  width: 104px;
+  height: auto;
+}
+
+.fechas-header h1 {
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  .cronograma-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+    .fechas-header img {
+    width: 60px;
+  }
+
+  .fechas-header h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .fechas-header img {
+    width: 80px;
+  }
+
+  .fechas-header h1 {
+    font-size: 3rem;
+  }
 }

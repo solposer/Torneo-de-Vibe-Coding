@@ -22,8 +22,12 @@ export default function Home() {
         <Criterios />
         <Premios />
       </div>
+<<<<<<< Updated upstream
       
       <div id="faq"><PreguntasFrecuentesSection /></div>
+=======
+      <PreguntasFrecuentesSection />
+>>>>>>> Stashed changes
       <Footer />
     </>
   );
