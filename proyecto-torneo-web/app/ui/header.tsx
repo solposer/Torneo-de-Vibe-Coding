@@ -19,7 +19,7 @@ export default function Header()  {
                 <a href="#faq">FAQ</a>
             </nav>
 
-            <Boton tipo="primario"/>
+            <Boton className='boton-header' tipo="primario"/>
         </header>
     )
 }

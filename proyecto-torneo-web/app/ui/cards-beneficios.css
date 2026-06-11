@@ -42,7 +42,11 @@
     .card-beneficios {
         max-width: 161px; /* también faltaba el px */
         min-height: 130px; /* ← proporcional */
-        padding: 10px;
+        padding: 10px 14px;
+        gap: 4px    ;
+    }
+
+    .card-header{
         gap: 10px;
     }
 

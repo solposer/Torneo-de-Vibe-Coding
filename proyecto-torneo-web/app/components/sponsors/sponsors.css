@@ -13,9 +13,6 @@
     transform: translateX(-50%);
   }
 }
-p{
-  margin-bottom: 40px;
-}
 
 .overflow-hidden {
   overflow-x: hidden;

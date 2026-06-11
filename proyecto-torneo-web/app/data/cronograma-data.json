@@ -1,80 +1,55 @@
 {
-    "cronograma": [
-    {
-      "fase": "Arranque y Setup",
-      "actividades": [
-        {
-          "hora": "09:00",
-          "subtitulo": "Recepción y Merch",
-          "descripcion": "Check-in y asignación de mesas."
-        },
-        {
-          "hora": "09:30",
-          "subtitulo": "Kickoff y Giro Secreto",
-          "descripcion": "Presentación oficial y revelación del requerimiento sorpresa."
-        },
-        {
-          "hora": "10:00",
-          "subtitulo": "Taller Relámpago: Orquestación con IA",
-          "descripcion": "Enfoque en cómo usar modelos generativos como copilotos sin perder el control del código."
-        }
-      ]
-    },
-    {
-      "fase": "Sprint 1 y Receso",
-      "actividades": [
-        {
-          "hora": "10:45",
-          "subtitulo": "Sprint 0: Arquitectura y Especificación",
-          "descripcion": "Bloque de prototipado. HITO 1 (11:30 AM): Repositorio con README, diagramas (Mermaid/C4) y stack definido."
-        },
-        {
-          "hora": "11:30",
-          "subtitulo": "Sprint 1: Frontend & Modularidad",
-          "descripcion": "Desarrollo de interfaces modulares. Mentores validarán la cohesión de los componentes."
-        },
-        {
-          "hora": "13:00",
-          "subtitulo": "Almuerzo AFK",
-          "descripcion": "Regla de oro: Laptops cerradas. Tech Hunting informal con pizza y sándwiches."
-        },
-        {
-          "hora": "14:00",
-          "subtitulo": "Dinámica Descongestionante",
-          "descripcion": "Trivia rápida en Kahoot sobre cultura tech o memes con premios."
-        }
-      ]
-    },
-    {
-      "fase": "Sprint 2 y Finales",
-      "actividades": [
-        {
-          "hora": "14:15",
-          "subtitulo": "Sprint 2: Backend, Lógica y CI/CD",
-          "descripcion": "Integración de APIs y persistencia. HITO 2 (18:00 PM): Release con código de producción, URL funcional y tests."
-        },
-        {
-          "hora": "17:30",
-          "subtitulo": "Tech Talk",
-          "descripcion": "Charla inspiracional mientras los equipos cierran su código y preparan su presentación."
-        },
-        {
-          "hora": "18:00",
-          "subtitulo": "Pitches (Demoday)",
-          "descripcion": "HITO 3: 5 min por equipo + 2 min de Q&A. Sustentación de decisiones técnicas y demo en vivo."
-        },
-        {
-          "hora": "19:15",
-          "subtitulo": "Deliberación y Networking",
-          "descripcion": "El jurado vota. Rondas de snacks, bebidas ligeras y reclutamiento."
-        },
-        {
-          "hora": "19:45",
-          "subtitulo": "Premiación y Cierre",
-          "descripcion": "Anuncio de ganadores, entrega de premios y fotos institucionales."
-        }
-      ]
-    }
+    "cronograma": [           
+      {
+        "hora": "09:00",
+        "subtitulo": "Recepción y Merch"
+      },
+      {
+        "hora": "09:30",
+        "subtitulo": "Kickoff y Giro Secreto"
+      },
+      {
+        "hora": "10:00",
+        "subtitulo": "Taller Relámpago: Orquestación con IA"
+      },
+  
+      {
+        "hora": "10:45",
+        "subtitulo": "Sprint 0: Arquitectura y Especificación"
+      },
+      {
+        "hora": "11:30",
+        "subtitulo": "Sprint 1: Frontend & Modularidad"
+      },
+      {
+        "hora": "13:00",
+        "subtitulo": "Almuerzo AFK"
+      },
+      {
+        "hora": "14:00",
+        "subtitulo": "Dinámica Descongestionante"
+      },
+      {
+        "hora": "14:15",
+        "subtitulo": "Sprint 2: Backend, Lógica y CI/CD"
+      },
+      {
+        "hora": "17:30",
+        "subtitulo": "Tech Talk"          
+      },
+      {
+        "hora": "18:00",
+        "subtitulo": "Pitches (Demoday)"          
+      },
+      {
+        "hora": "19:15",
+        "subtitulo": "Deliberación y Networking"     
+      },
+      {
+        "hora": "19:45",
+        "subtitulo": "Premiación y Cierre"        
+      }
+    
   ],
     "criterios":[
         {

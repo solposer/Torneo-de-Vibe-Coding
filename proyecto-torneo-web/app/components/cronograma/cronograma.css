@@ -1,28 +1,21 @@
 .cronograma-grid {
-  display: grid;
-  gap: 1.5rem;
+    gap: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .actividad-item {
-  background-color: var(--color-negro-claro);
+  
   padding: 1.5rem;
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  
   transition: transform 0.2s ease;
-  width: 100%;
+  width: 250px;  
 }
 
 .actividad-item:hover {
   transform: translateY(-4px);
-}
-
-.variante-red {
-  border-top: 4px solid var(--color-fucsia);
-}
-
-.variante-white {
-  border-top: 4px solid var(--color-blanco-bordes);
 }
 
 .actividad-header {
@@ -38,12 +31,6 @@
   border-radius: 50%;
 }
 
-.variante-red .actividad-punto { background-color: var(--color-fucsia); }
-.variante-red .actividad-hora  { color: var(--color-fucsia); }
-
-.variante-white .actividad-punto { background-color: var(--color-plomo); }
-.variante-white .actividad-hora  { color: var(--color-blanco-bordes); }
-
 .actividad-hora {
   font-size: 1.125rem;
   font-weight: bold;
@@ -51,8 +38,9 @@
 
 .cronograma-fases-container {
   display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  flex-direction: row;
+  gap: 3rem;  
+  flex-wrap: wrap;
 }
 
 .fase-titulo {
@@ -75,31 +63,19 @@
   height: auto;
 }
 
-.fechas-header h1 {
-  font-size: clamp(2rem, 5vw, 4rem);
-}
-
 /* ── Media queries: primero el más grande ── */
 @media (max-width: 1024px) {
   .fechas-header img {
     width: 80px;
   }
-
-  .fechas-header h1 {
-    font-size: 3rem;
-  }
 }
 
 @media (max-width: 768px) {
   .cronograma-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .fechas-header img {
     width: 60px;
-  }
-
-  .fechas-header h1 {
-    font-size: 2.25rem;
   }
 }
