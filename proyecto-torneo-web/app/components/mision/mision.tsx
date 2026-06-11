@@ -12,7 +12,7 @@ export default function Mision() {
                 <div className="mision-izquierda">
                     <div className="mision-header">
                         <Image src="/cohete.png" alt="cohete" width={118} height={114} />
-                        <h1 className="fuente-titulos">Tu mision</h1>
+                        <h1 className="fuente-titulos">Tu misión</h1>
                     </div>
                     <div className="texto-principal">
                         Construir un producto de software funcional y desplegado en producción en menos de 11 horas, usando IA como copiloto del desarrollo

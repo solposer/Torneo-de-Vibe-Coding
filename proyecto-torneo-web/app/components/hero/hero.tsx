@@ -33,8 +33,8 @@ export default function Hero() {
                     <article className="caja-fecha">
                         <Calendar className="caja-fecha-icono" />
                         <div className="texto-fecha">
-                            <h4>27 de junio</h4>
-                            <p>sábado</p>
+                            <h4>{data.fechaEvento.fecha}</h4>
+                            <p>{data.fechaEvento.dia}</p>
                         </div>                
                     </article>
                     <article className="caja-fecha">
