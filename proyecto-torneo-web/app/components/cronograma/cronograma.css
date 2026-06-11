@@ -1,81 +1,235 @@
 .cronograma-grid {
-    gap: 1.5rem;
-    display: flex;
-    justify-content: space-evenly;
+
+  gap: 1.5rem;
+
+  display: flex;
+
+  justify-content: space-evenly;
+
 }
+
 
 .actividad-item {
-  
+
   padding: 1.5rem;
+
   border-radius: 8px;
+
   display: flex;
-  
+
   transition: transform 0.2s ease;
-  width: 250px;  
+
+  width: 250px;
+
 }
 
-.actividad-item:hover {
-  transform: translateY(-4px);
-}
 
 .actividad-header {
+
   display: flex;
+
   align-items: center;
+
   gap: 0.5rem;
+
   margin-bottom: 0.75rem;
+
 }
+
 
 .actividad-punto {
+
   width: 0.5rem;
+
   height: 0.5rem;
+
   border-radius: 50%;
+
 }
+
 
 .actividad-hora {
+
   font-size: 1.125rem;
+
   font-weight: bold;
+
 }
+
+
+/* ── Contenedor principal: timeline vertical en mobile ── */
 
 .cronograma-fases-container {
+
   display: flex;
-  flex-direction: row;
-  gap: 3rem;  
-  flex-wrap: wrap;
+
+  flex-direction: column;
+
+  gap: 1.5rem;
+
+  position: relative;
+
+  padding: 80px 80px;
+
 }
+
+
+/* Línea vertical del timeline (solo mobile) */
+
+.cronograma-fases-container::before {
+
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+
+  bottom: 0;
+
+  width: 2px;
+
+  background: var(--color-fucsia);
+
+  opacity: 0.6;
+
+}
+
+
+/* Punto en la línea del timeline para cada item (mobile) */
+
+.cronograma-fases-container > .actividad-item {
+
+  position: relative;
+
+}
+
+
+.cronograma-row-separator {
+
+  display: none;
+
+}
+
 
 .fase-titulo {
+
   font-size: 1.5rem;
+
   color: var(--color-celeste-claro);
+
   margin-bottom: 1.5rem;
+
   border-bottom: 1px solid var(--color-azul-oscuro);
+
   padding-bottom: 0.5rem;
+
 }
 
-/* ── Header con imagen + h1 ── */
+
 .fechas-header {
+
   display: flex;
+
   align-items: center;
+
   gap: 1rem;
+
 }
+
 
 .fechas-header img {
+
   width: clamp(56px, 8vw, 104px);
+
   height: auto;
+
 }
 
-/* ── Media queries: primero el más grande ── */
+
 @media (max-width: 1024px) {
+
   .fechas-header img {
+
     width: 80px;
+
   }
+
 }
+
 
 @media (max-width: 768px) {
-  .cronograma-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
   .fechas-header img {
+
     width: 60px;
+
   }
+
+}
+
+
+/* ── Desktop: 3 filas × 4 columnas centrado + separadores ── */
+
+@media (min-width: 769px) {
+
+  .cronograma-fases-container {
+
+    display: grid;
+
+    /* Centrado: limita el ancho del grid y lo centra dentro del contenedor */
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-auto-rows: auto;
+
+    gap: 2.5rem 1.5rem;     /* row-gap un poco mayor para que la línea respire */
+
+    padding: 60px 40px;
+
+    justify-items: center;  /* centra cada card dentro de su celda */
+
+  }
+
+
+  /* Quitamos la línea y los puntos del timeline en desktop */
+
+  .cronograma-fases-container::before,
+
+  .cronograma-fases-container > .actividad-item::before {
+
+    content: none;
+
+    display: none;
+
+  }
+
+
+  /* Separadores horizontales — se renderizan en medio de la grid, no al final.
+
+     Al ser hijos directos del grid, heredan grid-row automáticamente por orden,
+
+     y con grid-column 1/-1 ocupan todo el ancho. */
+
+  .cronograma-row-separator {
+
+    display: block;
+
+    grid-column: 1 / -1;       /* ocupa las 4 columnas */
+
+    height: 1px;
+
+    background: var(--color-azul-oscuro, #2a3a5a);
+
+    opacity: 0.6;
+
+    margin: 0.25rem 0;
+
+    align-self: center;
+
+  }
+
 }
