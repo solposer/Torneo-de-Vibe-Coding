@@ -37,7 +37,7 @@ export default function Mision() {
                         </div>
                         <div className="acceso-item">
                             <Plus color="#A154F0" size={30}/>
-                            <span>+11h de vibeCoding responsble</span>
+                            <span>11h de vibeCoding responsble</span>
                         </div>
                     </div>
                 </div>
