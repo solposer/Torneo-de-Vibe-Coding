@@ -1,3 +1,16 @@
+.faq-pregunta {
+    color: #d1d5db;
+    transition: color 0.3s;
+}
+
+.faq-pregunta--open {
+    color: #ffffff;
+}
+
+.faq-btn:hover .faq-pregunta:not(.faq-pregunta--open) {
+    color: #F0197D;
+}
+
 @media (max-width: 768px) {
     .faq-item {
         padding-left: 0.5rem !important;
