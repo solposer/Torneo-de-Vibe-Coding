@@ -2,13 +2,14 @@ import data from "@/app/data/sponsors-data.json";
 import Image from "next/image";
 import "./sponsors.css"
 
+const sponsorsCarousel = [...data.sponsors, ...data.sponsors, ...data.sponsors, ...data.sponsors];
+
 export default function Sponsors() {
   return (
-    <>    
-      <section className="overflow-hidden">
-        <div className="slide-track">
-          {[...data.sponsors, ...data.sponsors,...data.sponsors,...data.sponsors].map((sponsor, index) => (
-           <Image
+    <section className="overflow-hidden">
+      <div className="slide-track">
+        {sponsorsCarousel.map((sponsor, index) => (
+          <Image
             key={index}
             src={sponsor.logo}
             alt={sponsor.name}
@@ -16,9 +17,8 @@ export default function Sponsors() {
             height={40}
             style={{ objectFit: 'contain', width: 'clamp(70px, 15vw, 140px)', height: 'auto' }}
           />
-          ))}
-        </div>
-      </section>
-    </>
+        ))}
+      </div>
+    </section>
   );
 }

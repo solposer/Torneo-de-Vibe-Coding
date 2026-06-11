@@ -1,3 +1,11 @@
+a.boton-primario,
+a.boton-secundario {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .boton-primario {
     color: var(--color-blanco);
     background: var(--gradiente-principal);

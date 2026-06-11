@@ -1,4 +1,3 @@
-'use client';
 import heroData from "@/app/data/hero-data.json";
 import "./boton.css";
 
@@ -9,18 +8,18 @@ interface BotonProps {
 }
 
 export default function Boton({ tipo }: BotonProps) {
-  const boton = heroData.botones.find(
-    (boton) => boton.tipo === tipo
-  );
+  const boton = heroData.botones.find((b) => b.tipo === tipo);
 
   if (!boton) return null;
 
   return (
-    <button
+    <a
+      href={boton.link}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`boton-${tipo}`}
-      onClick={() => window.open(boton.link, "_blank", "noopener,noreferrer")}
     >
       {boton.texto}
-    </button>
+    </a>
   );
 }

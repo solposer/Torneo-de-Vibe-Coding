@@ -8,7 +8,6 @@ import './preguntas.css'
 
 export default function PreguntasFrecuentesSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(3);
-    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     const toggleFaq = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -58,8 +57,7 @@ export default function PreguntasFrecuentesSection() {
                         >
                             <button
                                 onClick={() => toggleFaq(index)}
-                                onMouseEnter={() => setHoveredIndex(index)}
-                                onMouseLeave={() => setHoveredIndex(null)}
+                                className="faq-btn"
                                 style={{
                                     width: '100%',
                                     display: 'flex',
@@ -73,11 +71,9 @@ export default function PreguntasFrecuentesSection() {
                                     color: 'inherit',
                                 }}
                             >
-                                <h3 className="faq-pregunta" style={{
-                                    color: isOpen ? '#ffffff' : hoveredIndex === index ? '#F0197D' : '#d1d5db',
+                                <h3 className={`faq-pregunta${isOpen ? ' faq-pregunta--open' : ''}`} style={{
                                     fontSize: '24px',
                                     fontWeight: 500,
-                                    transition: 'color 0.3s',
                                     margin: 0,
                                     fontFamily: 'var(--fuente-parrafos)',
                                 }}>
