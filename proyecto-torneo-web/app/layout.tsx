@@ -4,9 +4,14 @@ import Header from './ui/header';
 
 export const metadata: Metadata = {
   title: "Torneo de Vibecoding",
-  description: "Torneo de Vibecoding",
+  description: "Participa en el Torneo de Vibecoding y usa la IA para acelerar el desarrollo de soluciones.",
   icons: {
     icon: "/logo-torneo.png",
+  },
+  openGraph: {
+    title: "Torneo de Vibecoding",
+    description: "Participa en el Torneo de Vibecoding.",
+    images: ["/logo-torneo.png"],
   },
 };
 

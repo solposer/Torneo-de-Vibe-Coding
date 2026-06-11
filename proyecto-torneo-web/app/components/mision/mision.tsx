@@ -33,7 +33,7 @@ export default function Mision() {
                         </div>
                         <div className="acceso-item">
                             <Users color="#A154F0" size={30} />
-                            <span>Abierto al <strong>publico general</strong></span>
+                            <span>Abierto al <strong>público general</strong></span>
                         </div>
                         <div className="acceso-item">
                             <Plus color="#A154F0" size={30}/>

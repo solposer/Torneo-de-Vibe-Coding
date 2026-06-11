@@ -102,7 +102,7 @@
 
 .info-lugar {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .info-lugar h4 {
