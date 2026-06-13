@@ -17,7 +17,8 @@
     align-items: center;
     gap: 16px;
     margin-bottom: 80px;
-    margin-top: 80px;
+    margin-top: 120px;
+    justify-content: center;
 }
 
 .trofeo-img {

@@ -1,5 +1,6 @@
 .slide-track {
   display: flex;
+  align-items: center;
   gap: 3rem;
   width: max-content;
   animation: scroll 25s linear infinite;
@@ -17,12 +18,16 @@
 .overflow-hidden {
   overflow-x: hidden;
   width: 100%;
-  position: relative; /* Ayuda a contener elementos con comportamientos extraños */
+  position: relative;
 }
 
 @media (max-width: 768px) {
   .slide-track {
     gap: 1.5rem;
-    animation-duration: 15s; /* más rápido = menos espacio vacío en pantalla chica */
+    animation-duration: 15s;
+  }
+
+  .slide-track img {
+    height: 44px !important;
   }
 }

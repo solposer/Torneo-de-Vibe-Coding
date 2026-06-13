@@ -4,18 +4,22 @@ import "./sponsors.css"
 
 export default function Sponsors() {
   return (
-    <>    
+    <>
       <section className="overflow-hidden">
         <div className="slide-track">
-          {[...data.sponsors, ...data.sponsors,...data.sponsors,...data.sponsors].map((sponsor, index) => (
-           <Image
-            key={index}
-            src={sponsor.logo}
-            alt={sponsor.name}
-            width={160}
-            height={40}
-            style={{ objectFit: 'contain', width: 'clamp(70px, 15vw, 140px)', height: 'auto' }}
-          />
+          {[...data.sponsors, ...data.sponsors, ...data.sponsors, ...data.sponsors].map((sponsor, index) => (
+            <Image
+              key={index}
+              src={sponsor.logo}
+              alt={sponsor.name}
+              width={200}
+              height={60}
+              style={{
+                objectFit: 'contain',
+                width: 'clamp(100px, 20vw, 200px)',
+                height: '60px'
+              }}
+            />
           ))}
         </div>
       </section>
