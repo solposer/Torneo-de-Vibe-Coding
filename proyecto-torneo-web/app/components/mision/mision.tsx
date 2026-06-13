@@ -11,7 +11,7 @@ export default function Mision() {
                 {/* COLUMNA IZQUIERDA */}
                 <div className="mision-izquierda">
                     <div className="mision-header">
-                        <Image src="/cohete.png" alt="cohete" width={118} height={114} />
+                        <Image src="/cohete.png" alt="cohete" width={118} height={114} className="cohete-img" />
                         <h1 className="fuente-titulos">Tu misión</h1>
                     </div>
                     <div className="texto-principal">

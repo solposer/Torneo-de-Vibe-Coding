@@ -97,9 +97,13 @@
   override-colors: 0 #695E5E, 1 #AFABAB, 2 #786B6B, 3 #695E5E
 }
 
-
 .llevas{
     margin-bottom: 40px;
+}
+
+.cohete-img {
+    width: 118px;
+    height: auto;
 }
 /* mobile */
 @media (max-width: 768px) {
@@ -143,5 +147,9 @@
         padding: 0 0;
         box-sizing: border-box;
         justify-content: center;
+    }
+    
+    .cohete-img {
+        width: 72px;
     }
 }
