@@ -1,4 +1,6 @@
-.actividad-item {  
+/* actividades-cronograma.css */
+
+.actividad-item {
   padding: 1.5rem;  
   display: flex;
   flex-direction: column;
@@ -25,7 +27,7 @@
 }
 
 .actividad-hora {
-  font-size: 1.125rem;
+  font-size: 1.25rem; /* ← era 1.125rem */
   font-family: var(--fuente-parrafos);
 }
 
@@ -36,7 +38,7 @@
 .variante-white .actividad-hora  { color: var(--color-blanco-bordes); }
 
 .actividad-subtitulo {
-  font-size: 14px;
+  font-size: 1rem; /* ← era 14px */
   margin: 0;
   font-family: var(--fuente-parrafos);
 }
@@ -52,7 +54,7 @@
 }
 
 .actividad-descripcion {
-  font-size: 0.875rem;
+  font-size: 0.9375rem; /* ← era 0.875rem (14px → 15px) */
   color: var(--color-blanco);
   margin-top: 0.5rem;
   margin-bottom: 0;
@@ -61,11 +63,15 @@
 
 @media (max-width: 768px) {
   .actividad-hora {
-    font-size: 1rem;
+    font-size: 1rem; /* ← era 1rem, se mantiene */
   }
 
   .actividad-subtitulo {
-    font-size: 12px;
+    font-size: 0.875rem; /* ← era 12px, sube a 14px */
+  }
+
+  .actividad-descripcion {
+    font-size: 0.875rem; /* ← mobile también sube */
   }
 
   .actividad-item {
