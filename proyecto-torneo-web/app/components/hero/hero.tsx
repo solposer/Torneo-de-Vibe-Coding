@@ -18,7 +18,7 @@ export default function Hero() {
                             <h1 className='fuente-torneo-vibe text-vibecoding'><strong>Vibe Coding</strong></h1>
                         </div>           
                         <p className='fuente-subtitulos font-size-hero'>
-                            Estás list@ para ganar grandes premios, construir proyectos con <strong>IA</strong> y hacer networking con personas de la <strong>industria</strong>
+                            ¿Estás list@ para ganar grandes premios, construir proyectos con <strong>IA</strong> y hacer networking con personas de la <strong>industria</strong>?
                         </p>
                     </article>
                     <article className="hero-right">
