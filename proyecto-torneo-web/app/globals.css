@@ -104,6 +104,7 @@ h1 {
 .fuente-titulos{
   font-family:var(--fuente-subtitulos);
   font-palette:--paleta-celeste;
+  color: var(--color-celeste-claro);
 }
 
 .fuente-torneo-vibe{
