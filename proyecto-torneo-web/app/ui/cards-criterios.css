@@ -62,10 +62,10 @@
   override-colors: 0 #56378A, 1 #56378A, 2 #56378A, 3 #56378A;
 }
 
-.fuente-color-1 { font-palette: --paleta-fucsia1; }
-.fuente-color-2 { font-palette: --paleta-morada1; }
-.fuente-color-3 { font-palette: --paleta-morada2; }
-.fuente-color-4 { font-palette: --paleta-celeste; }
+.fuente-color-1 { font-palette: --paleta-fucsia1; color:var(--color-fuscia) }
+.fuente-color-2 { font-palette: --paleta-morada1; color:#AF37A6 }
+.fuente-color-3 { font-palette: --paleta-morada2; color:#7455CE}
+.fuente-color-4 { font-palette: --paleta-celeste; color: var(--color-celeste-claro)}
 
 @media (max-width: 768px) {
   .card-criterios {
